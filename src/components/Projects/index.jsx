@@ -5,7 +5,7 @@ const Projects = () => {
     <h1>
       Projects
     </h1>
-  );
-};
+  )
+}
 
-export { Projects }
+export { Projects };

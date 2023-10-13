@@ -15,7 +15,7 @@ const Portfolio = () => {
         <Contact />
       </main>
     </>
-  );
-};
+  )
+}
 
-export { Portfolio }
+export { Portfolio };
