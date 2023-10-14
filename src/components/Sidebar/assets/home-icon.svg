@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 width="800px" height="800px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-	<g>
-		<polygon fill="#F9EBB2" points="48.001,56 36.001,56 36.001,44 28.001,44 28.001,56 16,56 16,25.617 31.962,9.66 48.001,25.695 	
+	
+	<g fill="#F9EBB2">
+		<polygon points="48.001,56 36.001,56 36.001,44 28.001,44 28.001,56 16,56 16,25.617 31.962,9.66 48.001,25.695 	
 		"/>
 	</g>
 	
