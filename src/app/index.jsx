@@ -1,4 +1,4 @@
-import styles from './app.module.scss';
+import './index.scss'
 
 import { Portfolio } from 'pages';
 
