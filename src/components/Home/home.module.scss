@@ -1,0 +1,30 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  max-width: 540px;
+  text-align: center;
+  z-index: 1;
+}
+
+.home-img {
+  margin-bottom: 1.5rem;
+  width: 150px;
+  height: 150px;
+  border: 5px solid var(--border-color);
+  border-radius: 50%;
+}
+.home-img > g:first-child {
+  fill: var(--second-color);
+}
+
+.home-name {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,33 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.75rem;
+  margin: 1.5rem 0;
+}
+
+.social-link {
+  transform: scale(1);
+  transition: .3s;
+}
+.social-link:hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
+.social-link > svg {
+  width: 20px;
+  height: 20px;
+}
+.social-link > svg > g {
+  fill: var(--title-color);
+  transition: .3s;
+}
+.social-link:hover > svg > g {
+  fill: var(--first-color);
+  transition: .3s;
+}
+
+// @media screen and (max-width: 1024px) {
+//   .social-link {
+//     font-size: 1.125rem;
+//   }
+// }

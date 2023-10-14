@@ -1,18 +1,19 @@
-//import styles from './portfolio.module.scss';
+import styles from './portfolio.module.scss';
 
-import { Sidebar, Home, About, Skills, Experience, Projects, Contact } from 'components';
+import { Sidebar, Home } from 'components';
+//import { Sidebar, Home, About, Skills, Experience, Projects, Contact } from 'components';
 
 const Portfolio = () => {
   return (
     <>
       <Sidebar />
-      <main>
+      <main className={styles.main}>
         <Home />
-        <About />
+        {/* <About />
         <Skills />
         <Experience />
         <Projects />
-        <Contact />
+        <Contact /> */}
       </main>
     </>
   )
