@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio-frontend/static/css/main.89d4aaf9.css",
+    "main.js": "/portfolio-frontend/static/js/main.e0706cbe.js",
+    "static/js/787.c78a8ab9.chunk.js": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js",
+    "static/media/developer.svg": "/portfolio-frontend/static/media/developer.9e15fc4bcc5d3cb5c133fb3a53a9335a.svg",
+    "static/media/sun.svg": "/portfolio-frontend/static/media/sun.be0366e342e49049217a5ecd7b7f7376.svg",
+    "static/media/logo-globe-icon.svg": "/portfolio-frontend/static/media/logo-globe-icon.8c4071a4a463072efdbf79b0f4d5bc11.svg",
+    "static/media/dots-bg.svg": "/portfolio-frontend/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
+    "static/media/tree2.svg": "/portfolio-frontend/static/media/tree2.f9e1dc087d32248ced433b7439f4557b.svg",
+    "static/media/tree1.svg": "/portfolio-frontend/static/media/tree1.70a2c7cf6e6fe2dcfe9cb9a56f76c1d9.svg",
+    "static/media/github-icon.svg": "/portfolio-frontend/static/media/github-icon.6389e8d48ab73a2cee4622ecc8fba001.svg",
+    "static/media/about-icon.svg": "/portfolio-frontend/static/media/about-icon.013b38c183ee49586371653a529f5417.svg",
+    "static/media/projects-icon.svg": "/portfolio-frontend/static/media/projects-icon.6efe94904d08029952e6538e6bbaf876.svg",
+    "static/media/skills-icon.svg": "/portfolio-frontend/static/media/skills-icon.bf3b2f15a1df430187f6d444bc21b831.svg",
+    "static/media/linkedin-icon.svg": "/portfolio-frontend/static/media/linkedin-icon.d48f680f45c3062f45d14e310c0e958e.svg",
+    "static/media/home-icon.svg": "/portfolio-frontend/static/media/home-icon.15eaa0aa9549f48d708630c0384ef192.svg",
+    "static/media/contact-icon.svg": "/portfolio-frontend/static/media/contact-icon.9e33f08dda00eb0eaa4f8170a23a04ba.svg",
+    "static/media/experience-icon.svg": "/portfolio-frontend/static/media/experience-icon.791efb9574b82b9797405422666e0222.svg",
+    "index.html": "/portfolio-frontend/index.html",
+    "main.89d4aaf9.css.map": "/portfolio-frontend/static/css/main.89d4aaf9.css.map",
+    "main.e0706cbe.js.map": "/portfolio-frontend/static/js/main.e0706cbe.js.map",
+    "787.c78a8ab9.chunk.js.map": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89d4aaf9.css",
+    "static/js/main.e0706cbe.js"
+  ]
+}
