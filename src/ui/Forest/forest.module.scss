@@ -1,0 +1,59 @@
+.forest {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.forest-element {
+  position: absolute;
+}
+.forest-element > g {
+  fill: var(--lt-green-bg-color);
+}
+
+.sun {
+  width: 72px;
+  height: 72px;
+  top: 5%;
+  right: 30%;
+}
+.sun > g {
+  fill: var(--lt-yellow-bg-color);
+}
+
+.t1 {
+  width: 48px;
+  height: 48px;
+  top: 14%;
+  left: 24%;
+}
+
+.t2 {
+  width: 60px;
+  height: 60px;
+  bottom: 21%;
+  right: 16%;
+}
+
+.t3 {
+  width: 56px;
+  height: 56px;
+  top: 35%;
+  right: 10%;
+}
+
+.t4 {
+  width: 50px;
+  height: 50px;
+  bottom: 42%;
+  left: 5%;
+}
+
+.t5 {
+  width: 55px;
+  height: 55px;
+  bottom: 16%;
+  left: 20%;
+}

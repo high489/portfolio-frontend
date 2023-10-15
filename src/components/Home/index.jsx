@@ -2,7 +2,7 @@ import styles from './home.module.scss';
 import { Link as LinkScroll } from 'react-scroll';
 
 import { Developer } from './assets';
-import { ScrollDown, Socials } from 'ui';
+import { Socials, ScrollDown, Forest } from 'ui';
 
 const Home = () => {
   return (
@@ -19,6 +19,8 @@ const Home = () => {
 
           <ScrollDown />
         </div>
+        
+        <Forest />
       </section>
     </>
   )
