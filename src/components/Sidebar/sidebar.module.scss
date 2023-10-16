@@ -15,12 +15,32 @@
   //transition: .3s;
 }
 
+@keyframes earth-scaling {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes earth-filling {
+  0% {
+    fill: var(--lt-green-bg-color);
+  }
+  50% {
+    fill: var(--lt-yellow-bg-color);
+  }
+  100% {
+    fill: var(--lt-green-bg-color);
+  }
+}
+
 .nav-logo {
   transform: scale(1);
-  transition: .3s;
-}
-.nav-logo:hover {
-  transform: scale(1.1);
   transition: .3s;
 }
 .nav-logo > svg {
@@ -31,9 +51,23 @@
   fill: var(--lt-green-bg-color);
   transition: .3s;
 }
-.nav-logo:hover > svg > g {
-  fill: var(--lt-yellow-bg-color);
-  transition: .3s;
+@media(pointer: fine) {
+  .nav-logo:hover {
+    transform: scale(1.1);
+    transition: .3s;
+  }
+  .nav-logo:hover > svg > g {
+    fill: var(--lt-yellow-bg-color);
+    transition: .3s;
+  }
+}
+@media(pointer: coarse) {
+  .nav-logo:hover {
+    animation: earth-scaling 1s linear;
+  }
+  .nav-logo:hover > svg > g {
+    animation: earth-filling 1s linear;
+  }
 }
 
 .nav-list {
@@ -49,9 +83,16 @@
 .nav-link > svg > g {
   fill: var(--lt-green-bg-color);
 }
-.nav-link:hover > svg > g {
-  fill: var(--lt-yellow-bg-color);
-  transition: .3s;
+@media(pointer: fine) {
+  .nav-link:hover > svg > g {
+    fill: var(--lt-yellow-bg-color);
+    transition: .3s;
+  }
+}
+@media(pointer: coarse) {
+  .nav-link:hover > svg > g {
+    animation: earth-filling 1s linear;
+  }
 }
 
 .copyright {

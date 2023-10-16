@@ -13,14 +13,34 @@
   fill: var(--lt-green-bg-color);
 }
 
+@keyframes sun-shining {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .sun {
   width: 72px;
   height: 72px;
   top: 5%;
   right: 30%;
+  animation: sun-shining 2s linear infinite;
 }
 .sun > g {
   fill: var(--lt-yellow-bg-color);
+}
+
+.house {
+  width: 40px;
+  height: 40px;
+  bottom: 31%;
+  left: 15%;
 }
 
 .t1 {
