@@ -12,6 +12,8 @@
 /build
 
 # misc
+.temp
+.temp/8
 .vscode
 .vscode/*
 .DS_Store
