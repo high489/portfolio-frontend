@@ -8,6 +8,7 @@
 .scroll-name {
   color: var(--text-color);
   font-size: var(--small-font-size);
+  user-select: none;
 }
 
 .mouse {

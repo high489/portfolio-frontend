@@ -1,0 +1,59 @@
+.language-selector {
+  position: relative;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: 35px;
+  border: 3.5px solid var(--border-color);
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.flag {
+  position: absolute;
+  max-width: 110%;
+  height: auto;
+}
+
+.selected-language {
+  opacity: 1;
+}
+
+.language-options {
+  margin-top: 0.5rem;
+  position: absolute;
+  display: flex;  
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.language-options-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.language-options-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 150ms, transform 150ms;
+}
+.language-options-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.language-options-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms, transform 150ms;
+}
+
+.language-option {
+  cursor: pointer;
+}
+
+
+

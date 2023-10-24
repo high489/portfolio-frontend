@@ -2,7 +2,6 @@ import styles from './sidebar.module.scss';
 import { Link as LinkScroll } from 'react-scroll';
 
 import {
-  LogoIcon,
   HomeIcon,
   AboutIcon,
   SkillsIcon,
@@ -10,15 +9,14 @@ import {
   ProjectsIcon,
   ContactIcon,
 } from './assets';
+import { LanguageSelector } from 'ui';
 
 const Sidebar = () => {
   return (
     <>
       <aside className={styles.aside}>
 
-        <LinkScroll to="home" className={styles['nav-logo']}>
-          <LogoIcon />
-        </LinkScroll>
+        <LanguageSelector />
 
         <nav className={styles.nav}>
           <ul className={styles['nav-list']}>
