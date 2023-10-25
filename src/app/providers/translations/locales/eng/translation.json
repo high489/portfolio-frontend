@@ -1,0 +1,10 @@
+{
+  "portfolio": {
+    "home": {
+      "name": "Vitalii Matskaniuk",
+      "speciality": "Frontend Developer",
+      "contactBtnText": "Contact Me",
+      "scrollElementText": "Scroll Down"
+    }
+  }
+}

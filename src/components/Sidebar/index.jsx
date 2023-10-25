@@ -1,6 +1,8 @@
 import styles from './sidebar.module.scss';
+import { useTranslation } from 'react-i18next';
 import { Link as LinkScroll } from 'react-scroll';
 
+import { LanguageSelector } from 'ui';
 import {
   HomeIcon,
   AboutIcon,
@@ -9,14 +11,15 @@ import {
   ProjectsIcon,
   ContactIcon,
 } from './assets';
-import { LanguageSelector } from 'ui';
 
 const Sidebar = () => {
+  const { i18n } = useTranslation()
+
   return (
     <>
       <aside className={styles.aside}>
 
-        <LanguageSelector />
+        <LanguageSelector languages={i18n.options.resources} currentLanguage={i18n.language} />
 
         <nav className={styles.nav}>
           <ul className={styles['nav-list']}>

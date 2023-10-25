@@ -1,17 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
+import { useTranslation } from 'react-i18next';
 import styles from './language-selector.module.scss';
 
-import { EngFlag, RusFlag, EspFlag } from './assets';
-
-const languages = [
-  { code: 'eng', name: 'English', flag: EngFlag },
-  { code: 'rus', name: 'Russian', flag: RusFlag },
-  { code: 'esp', name: 'Spanish', flag: EspFlag },
-]
-
-const LanguageSelector = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0])
+const LanguageSelector = ({ languages, currentLanguage }) => {
+  const { i18n } = useTranslation()
+  const [selectedLanguage, setSelectedLanguage] = useState(languages[currentLanguage])
   const [showOptions, setShowOptions] = useState(false)
 
   const languageSelectorRef = useRef(null)
@@ -34,11 +28,9 @@ const LanguageSelector = () => {
   }, [])
 
   const handleLanguageSelect = (language) => {
-    setTimeout(() => {
-      setSelectedLanguage(language)
-    }, 150)
+    setSelectedLanguage(languages[language])
     setShowOptions(false)
-    //onLanguageSelest(language.code)
+    i18n.changeLanguage(language)
   }
 
   return (
@@ -61,17 +53,20 @@ const LanguageSelector = () => {
         unmountOnExit
       >
         <div className={styles['language-options']} ref={languageOptionsRef}>
-          {languages
-            .filter((language) => language.code !== selectedLanguage.code)
-            .map((language) => (
-              <div
-                key={language.code}
-                className={`${styles.language} ${styles['language-option']}`}
-                onClick={() => handleLanguageSelect(language)}
-              >
-                <language.flag className={styles.flag} alt={language.name} />
-              </div>
-            ))}
+          {Object.keys(languages)
+            .filter(lang => lang !== currentLanguage)
+            .map(lang => {
+              let languageOption = languages[lang]
+              return (
+                <div
+                  key={lang}
+                  className={`${styles.language} ${styles['language-option']}`}
+                  onClick={() => handleLanguageSelect(lang)}
+                >
+                  <languageOption.flag className={styles.flag} alt={languageOption.name} />
+                </div>
+              )
+            })}
         </div>
       </CSSTransition>
 
