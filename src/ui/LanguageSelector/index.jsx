@@ -38,7 +38,7 @@ const LanguageSelector = ({ languages, currentLanguage }) => {
 
       <div className={`${styles.language} ${styles['selected-language']}`}>
         {/* <selectedLanguage.flag className={styles.flag} /> */}
-        <h2>{selectedLanguage.name.slice(0, 3)}</h2>
+        <h2>{currentLanguage}</h2>
       </div>
       
       <CSSTransition
