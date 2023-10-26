@@ -8,6 +8,8 @@ const LanguageSelector = ({ languages, currentLanguage }) => {
   const [selectedLanguage, setSelectedLanguage] = useState(languages[currentLanguage])
   const [showOptions, setShowOptions] = useState(false)
 
+  const SelectedLanguageFlag = selectedLanguage.flag
+
   const languageSelectorRef = useRef(null)
   const languageOptionsRef = useRef(null)
 
@@ -37,7 +39,7 @@ const LanguageSelector = ({ languages, currentLanguage }) => {
     <div className={styles['language-selector']} ref={languageSelectorRef} onClick={() => setShowOptions(!showOptions)}>
 
       <div className={`${styles.language} ${styles['selected-language']}`}>
-        <selectedLanguage.flag className={styles.flag} alt={selectedLanguage.name} />
+        <SelectedLanguageFlag className={styles.flag} />
       </div>
       
       <CSSTransition
@@ -56,14 +58,14 @@ const LanguageSelector = ({ languages, currentLanguage }) => {
           {Object.keys(languages)
             .filter(lang => lang !== currentLanguage)
             .map(lang => {
-              let languageOption = languages[lang]
+              let LanguageOptionFlag = languages[lang].flag
               return (
                 <div
                   key={lang}
                   className={`${styles.language} ${styles['language-option']}`}
                   onClick={() => handleLanguageSelect(lang)}
                 >
-                  <languageOption.flag className={styles.flag} alt={languageOption.name} />
+                  <LanguageOptionFlag className={styles.flag} />
                 </div>
               )
             })}
