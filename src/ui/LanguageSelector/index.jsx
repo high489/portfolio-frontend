@@ -64,8 +64,7 @@ const LanguageSelector = ({ languages, currentLanguage }) => {
                   className={`${styles.language} ${styles['language-option']}`}
                   onClick={() => handleLanguageSelect(lang)}
                 >
-                  {/* <languageOption.flag className={styles.flag} /> */}
-                  <h2>{languageOption.name.slice(0, 3)}</h2>
+                  <languageOption.flag className={styles.flag} />
                 </div>
               )
             })}
