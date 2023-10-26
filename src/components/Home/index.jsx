@@ -6,7 +6,7 @@ import { Developer } from './assets';
 import { Socials, ScrollDown, Forest } from 'ui';
 
 const Home = () => {
-  const { t ,i18n } = useTranslation()
+  const { t } = useTranslation()
 
   return (
     <>
