@@ -30,7 +30,6 @@
 }
 
 .social-link {
-  transform: scale(1);
   transition: .3s;
 }
 .social-link > svg {
@@ -42,10 +41,6 @@
   transition: .3s;
 }
 @media(pointer: fine) {
-  .social-link:hover {
-    transform: scale(1.05);
-    transition: .3s;
-  }
   .social-link:hover > svg > g {
     fill: var(--first-color);
     transition: .3s;

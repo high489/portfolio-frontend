@@ -13,12 +13,26 @@ const Home = () => {
       <section className={`${styles.home} container`} id="home">
         <div className={styles.intro}>
           <Developer className={styles['home-img']} />
+
           <h1 className={styles['home-name']}>{ t('portfolio.home.name') }</h1>
+
           <span className={styles['home-speciality']}>{ t('portfolio.home.speciality') }</span>
 
+          <a
+            href="https://www.codewars.com/users/high489"
+            target='_blank' 
+            rel="noreferrer"
+          >
+            <img 
+              className={styles['home-codewars-badge']}
+              src="https://www.codewars.com/users/high489/badges/micro?theme=light"
+              alt="codewars"
+            />
+          </a>
+             
           <Socials />
 
-          <LinkScroll to="contact" className="btn">{ t('portfolio.home.contactBtnText') }</LinkScroll>
+          <LinkScroll to="contact" className={`btn ${styles['home-contact-btn']}`}>{ t('portfolio.home.contactBtnText') }</LinkScroll>
 
           <ScrollDown text={ t('portfolio.home.scrollElementText') }/>
         </div>
