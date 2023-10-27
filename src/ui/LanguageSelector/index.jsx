@@ -5,6 +5,8 @@ import styles from './language-selector.module.scss';
 
 const LanguageSelector = ({ languages, currentLanguage }) => {
   const { i18n } = useTranslation()
+  const SelectedLanguageFlag = languages[currentLanguage].flag
+  // eslint-disable-next-line
   const [selectedLanguage, setSelectedLanguage] = useState(languages[currentLanguage])
   const [showOptions, setShowOptions] = useState(false)
 
@@ -34,11 +36,15 @@ const LanguageSelector = ({ languages, currentLanguage }) => {
   }
 
   return (
-    <div className={styles['language-selector']} ref={languageSelectorRef} onClick={() => setShowOptions(!showOptions)}>
-
+    <div
+      className={styles['language-selector']}
+      ref={languageSelectorRef} 
+      onClick={() => setShowOptions(!showOptions)}
+    >
       <div className={`${styles.language} ${styles['selected-language']}`}>
-        {/* <selectedLanguage.flag className={styles.flag} /> */}
-        <h2>{currentLanguage}</h2>
+        {/* <selectedLanguage className={styles.flag} /> */}
+        {/* <h2>{currentLanguage}</h2> */}
+        <SelectedLanguageFlag className={styles.flag} />
       </div>
       
       <CSSTransition
