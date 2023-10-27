@@ -11,6 +11,7 @@ import {
   ProjectsIcon,
   ContactIcon,
 } from './assets';
+import { useEffect } from 'react';
 
 const Sidebar = () => {
   const { i18n } = useTranslation()
@@ -19,7 +20,7 @@ const Sidebar = () => {
     <>
       <aside className={styles.aside}>
 
-        <LanguageSelector languages={i18n.options.resources} currentLanguage={i18n.language} />
+        <LanguageSelector languages={i18n.options.resources} currentLanguage={i18n.resolvedLanguage} />
 
         <nav className={styles.nav}>
           <ul className={styles['nav-list']}>
