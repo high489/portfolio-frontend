@@ -17,6 +17,7 @@ i18n
   .init({
     debug: false,
     fallbackLng: 'eng',
+    whitelist: ['eng', 'esp', 'rus'],
     resources: {
       eng: {
         name: "English",
