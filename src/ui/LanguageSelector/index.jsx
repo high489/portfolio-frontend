@@ -4,12 +4,9 @@ import { useTranslation } from 'react-i18next';
 import styles from './language-selector.module.scss';
 
 const LanguageSelector = ({ languages, currentLanguage }) => {
-  const { i18n } = useTranslation()
   const SelectedLanguageFlag = languages[currentLanguage].flag
-  // eslint-disable-next-line
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[currentLanguage])
-  const [showOptions, setShowOptions] = useState(false)
-
+  const { i18n } = useTranslation()
+  const [ showOptions, setShowOptions ] = useState(false)
   const languageSelectorRef = useRef(null)
   const languageOptionsRef = useRef(null)
 
@@ -30,9 +27,11 @@ const LanguageSelector = ({ languages, currentLanguage }) => {
   }, [])
 
   const handleLanguageSelect = (language) => {
-    setSelectedLanguage(languages[language])
+    setTimeout(() => {
+      i18n.changeLanguage(language)
+    }, 150);
     setShowOptions(false)
-    i18n.changeLanguage(language)
+    
   }
 
   return (
@@ -42,8 +41,6 @@ const LanguageSelector = ({ languages, currentLanguage }) => {
       onClick={() => setShowOptions(!showOptions)}
     >
       <div className={`${styles.language} ${styles['selected-language']}`}>
-        {/* <selectedLanguage className={styles.flag} /> */}
-        {/* <h2>{currentLanguage}</h2> */}
         <SelectedLanguageFlag className={styles.flag} />
       </div>
       

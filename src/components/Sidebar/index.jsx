@@ -11,7 +11,6 @@ import {
   ProjectsIcon,
   ContactIcon,
 } from './assets';
-import { useEffect } from 'react';
 
 const Sidebar = () => {
   const { i18n } = useTranslation()
