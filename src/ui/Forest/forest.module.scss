@@ -77,3 +77,9 @@
   bottom: 16%;
   left: 20%;
 }
+
+@media screen and (max-width: 576px) {
+  .sun, .house, .t1, .t2, .t3, .t4, .t5 {
+    display: none;
+  }
+}
