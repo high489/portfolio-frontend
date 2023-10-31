@@ -27,6 +27,7 @@
 }
 .nav-link > svg > g {
   fill: var(--lt-green-bg-color);
+  transition: .3s;
 }
 @media(pointer: fine) {
   .nav-link:hover > svg > g {

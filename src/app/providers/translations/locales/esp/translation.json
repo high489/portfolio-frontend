@@ -3,8 +3,28 @@
     "home": {
       "name": "Vitalii Matskaniuk",
       "speciality": "Desarrollador de frontend",
-      "contactBtnText": "Contactá Me",
-      "scrollElementText": "Hacia Abajo"
+      "contactBtnText": "Contactá Me"
+    },
+    "about": {
+      "sectionTitle": "Sobre Mí",
+      "infoP1": "Me llamo Vitalii Matskaniuk.",
+      "infoP2": "Decidí probar suerte como Desarrollador de Frontend después de algunos años de trabajar como Ingeniero de Calidad (QA).",
+      "infoP3": "Estoy interesado en el proceso de creación de aplicaciones web e interfaces de usuario. Mi prioridad es evolucionar y obtener experiencia. Aspiro a hacer este trabajo correctamente y con buena calidad.",
+      "downloadResumeBtn": "Descargar Сurrículum",
+      "positionsTitle": "Puestos",
+      "position1": "Desarrollador de Frontend",
+      "position1Exp": "1 año",
+      "position2": "Ingeniero de Calidad (QA)",
+      "position2Exp": "4 años"
+    }
+  },
+  "ui": {
+    "scrollElementText": "Hacia Abajo",
+    "personalQualities": {
+      "honesty": "Honestidad",
+      "senseOfJustice": "Justicia",
+      "easyGoing": "Persona fácil",
+      "boardGames": "Lotes ganados"
     }
   }
 }

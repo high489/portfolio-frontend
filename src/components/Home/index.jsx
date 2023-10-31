@@ -34,7 +34,7 @@ const Home = () => {
 
           <LinkScroll to="contact" className={`btn ${styles['home-contact-btn']}`}>{ t('portfolio.home.contactBtnText') }</LinkScroll>
 
-          <ScrollDown text={ t('portfolio.home.scrollElementText') }/>
+          <ScrollDown text={ t('ui.scrollElementText') }/>
         </div>
         
         <Forest />

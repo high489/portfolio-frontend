@@ -3,8 +3,28 @@
     "home": {
       "name": "Vitalii Matskaniuk",
       "speciality": "Frontend Developer",
-      "contactBtnText": "Contact Me",
-      "scrollElementText": "Scroll Down"
+      "contactBtnText": "Contact Me"
+    },
+    "about": {
+      "sectionTitle": "About Me",
+      "infoP1": "My name is Vitalii Matskaniuk.",
+      "infoP2": "I decided to try my hand as a Frontend Developer after some years of working as a QA Engineer.",
+      "infoP3": "I’m interested in the process of creating web applications and user interfaces. My priority is to evolve and get experience. I aspire to do this job correctly and with good quality.",
+      "downloadResumeBtn": "Download Resume",
+      "positionsTitle": "Positions",
+      "position1": "Frontend Developer",
+      "position1Exp": "1 year",
+      "position2": "QA Engineer",
+      "position2Exp": "4 years"
+    }
+  },
+  "ui": {
+    "scrollElementText": "Scroll Down",
+    "personalQualities": {
+      "honesty": "Honesty",
+      "senseOfJustice": "Sense of justice",
+      "easyGoing": "Easy-going person",
+      "boardGames": "Board games won"
     }
   }
 }
