@@ -16,6 +16,16 @@
       "position1Exp": "1 year",
       "position2": "QA Engineer",
       "position2Exp": "4 years"
+    },
+    "contact": {
+      "sectionTitle": "Get In Touch",
+      "contactTitle": "Let's talk about everything!",
+      "contactDetails": "Don't like forms? Send me email at",
+      "contactFormNamePh": "Your name",
+      "contactFormEmailPh": "Your email",
+      "contactFormSubjectPh": "Subject",
+      "contactFormMessagePh": "Write message",
+      "contactFormSubmit": "Send Message"
     }
   },
   "ui": {

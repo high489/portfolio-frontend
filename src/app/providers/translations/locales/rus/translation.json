@@ -16,6 +16,16 @@
       "position1Exp": "1 год",
       "position2": "Tестировщик (QA)",
       "position2Exp": "4 года"
+    },
+    "contact": {
+      "sectionTitle": "Будем На Связи",
+      "contactTitle": "Можем обсудить что угодно!",
+      "contactDetails": "Не любите формы? Напишите мне на",
+      "contactFormNamePh": "Ваше имя",
+      "contactFormEmailPh": "Вашa электронная почта",
+      "contactFormSubjectPh": "Тема",
+      "contactFormMessagePh": "Напишите сообщение",
+      "contactFormSubmit": "Отправить сообщение"
     }
   },
   "ui": {

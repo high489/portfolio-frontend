@@ -16,6 +16,16 @@
       "position1Exp": "1 año",
       "position2": "Ingeniero de Calidad (QA)",
       "position2Exp": "4 años"
+    },
+    "contact": {
+      "sectionTitle": "Estar En Contacto",
+      "contactTitle": "Podemos hablar de todo!",
+      "contactDetails": "¿No te gustan los formularios? Envíeme un correo electrónico a",
+      "contactFormNamePh": "Su nombre",
+      "contactFormEmailPh": "Su correo electrónico",
+      "contactFormSubjectPh": "Asunto",
+      "contactFormMessagePh": "Escriba mensaje",
+      "contactFormSubmit": "Enviar Mensaje"
     }
   },
   "ui": {
