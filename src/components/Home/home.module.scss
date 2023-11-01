@@ -33,6 +33,9 @@
   font-weight: var(--font-bold);
   margin-bottom: 0.5rem;
 }
+.home-name::selection {
+  background-color: var(--lt-yellow-bg-color);
+}
 
 .home-speciality {
   user-select: none;
@@ -40,6 +43,7 @@
 }
 
 .home-codewars-badge {
+  user-select: none;
   width: 150px;
 }
 @media screen and (max-width: 1024px) {

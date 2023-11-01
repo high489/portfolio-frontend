@@ -33,14 +33,14 @@
 }
 
 .about-description {
+  user-select: none;
   margin-bottom: 1rem;
   text-align: justify;
 }
 
 .about-download-resume-btn {
-  width: 15rem;
-  white-space: nowrap;
   text-align: center;
+  white-space: nowrap;
 }
 
 .about-positions {
@@ -113,6 +113,9 @@
   .about-data {
     grid-template-columns: 1fr;
     row-gap: 1.875rem;
+  }
+  .about-download-resume-btn {
+    width: 100%;
   }
 }
 

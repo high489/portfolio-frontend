@@ -23,6 +23,7 @@
   font-weight: var(--font-bold);
   position: relative;
   margin-bottom: 3.75rem;
+  user-select: none;
 }
 
 .section-title::before {
