@@ -20,11 +20,11 @@
     "contact": {
       "sectionTitle": "Estar En Contacto",
       "contactTitle": "Podemos hablar de todo!",
-      "contactDetails": "¿No te gustan los formularios? Envíeme un correo electrónico a",
+      "detailsText": "¿No te gustan los formularios?\nEnvíeme un correo electrónico a",
       "contactFormNamePh": "Su nombre",
       "contactFormEmailPh": "Su correo electrónico",
       "contactFormSubjectPh": "Asunto",
-      "contactFormMessagePh": "Escriba mensaje",
+      "contactFormMessagePh": "Mensaje",
       "contactFormSubmit": "Enviar Mensaje"
     }
   },

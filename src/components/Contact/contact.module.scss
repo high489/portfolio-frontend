@@ -17,6 +17,10 @@
   user-select: none;
 }
 
+.details-text {
+  white-space: pre-line;
+}
+
 .details-email {
   user-select: all;
   white-space: nowrap;
@@ -56,6 +60,7 @@
 }
 .contact-form-input::placeholder {
   user-select: none;
+  opacity: .7;
 }
 
 .contact-form-area {
@@ -65,6 +70,7 @@
 .contact-form-area textarea {
   resize: none;
 }
+
 
 .contact-form-btn {
   width: 250px;

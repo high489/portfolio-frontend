@@ -24,15 +24,20 @@ const About = () => {
         <div className={`${styles['about-data']} grid`}>
 
           <div className={styles['about-info']}>
-            <p className={styles['about-description']}>{ t('portfolio.about.infoP1') }</p>
-            <p className={styles['about-description']}>{ t('portfolio.about.infoP2') }</p>
-            <p className={styles['about-description']}>{ t('portfolio.about.infoP3') }</p>
+
+            <div className={styles['about-description']}>
+              <p>{ t('portfolio.about.infoP1') }</p>
+              <p>{ t('portfolio.about.infoP2') }</p>
+              <p>{ t('portfolio.about.infoP3') }</p>
+            </div>
+            
             <a 
               href={resume[i18n.resolvedLanguage]}
               className={`btn ${styles['about-download-resume-btn']}`}
             >
               { t('portfolio.about.downloadResumeBtn') }
             </a>
+            
           </div>
 
           <div className={`${styles['about-positions']} grid`}>

@@ -13,7 +13,7 @@ const Contact = () => {
         <div className={styles['contact-info']}>
           <h3 className={styles['contact-title']}>{ t('portfolio.contact.contactTitle') }</h3>
           <div className={styles['contact-details']}>
-            <span>{ t('portfolio.contact.contactDetails') }</span><br/>
+            <span className={styles['details-text']}>{ t('portfolio.contact.detailsText') }</span><br/>
             <span className={styles['details-email']}>vitalii.matskaniuk@gmail.com</span>
           </div>
         </div>

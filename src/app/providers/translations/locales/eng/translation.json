@@ -20,11 +20,11 @@
     "contact": {
       "sectionTitle": "Get In Touch",
       "contactTitle": "Let's talk about everything!",
-      "contactDetails": "Don't like forms? Send me email at",
+      "detailsText": "Don't like forms? Send me email at",
       "contactFormNamePh": "Your name",
       "contactFormEmailPh": "Your email",
       "contactFormSubjectPh": "Subject",
-      "contactFormMessagePh": "Write message",
+      "contactFormMessagePh": "Message",
       "contactFormSubmit": "Send Message"
     }
   },
