@@ -10,14 +10,44 @@ import {
   ExperienceIcon,
   ProjectsIcon,
   ContactIcon,
+  MenuIcon,
 } from './assets';
+import { useEffect, useRef, useState } from 'react';
 
 const Sidebar = () => {
   const { i18n } = useTranslation()
+  const [toggle, showMenu] = useState(false)
+
+  const sidebarRef = useRef(null);
+
+  useEffect(() => {
+    const sidebar = sidebarRef.current;
+
+    const preventTouchMove = (event) => {
+      event.preventDefault();
+    };
+
+    if (sidebar) {
+      sidebar.addEventListener('touchmove', preventTouchMove);
+    }
+
+    return () => {
+      if (sidebar) {
+        sidebar.removeEventListener('touchmove', preventTouchMove);
+      }
+    };
+  }, []);
 
   return (
     <>
-      <aside className={styles.aside}>
+      <aside 
+        className={
+          toggle
+          ? `${styles.aside} ${styles['show-menu']}`
+          : `${styles.aside}`
+        }
+        ref={sidebarRef}
+      >
 
         <LanguageSelector languages={i18n.options.resources} currentLanguage={i18n.resolvedLanguage} />
 
@@ -31,7 +61,7 @@ const Sidebar = () => {
             </li>
 
             <li className={styles['nav-item']}>
-              <LinkScroll to="about" className={styles['nav-link']}>
+              <LinkScroll to="about" offset={0} className={styles['nav-link']}>
                 <AboutIcon />
               </LinkScroll>
             </li>
@@ -68,6 +98,17 @@ const Sidebar = () => {
         </div>
 
       </aside>
+
+      <div 
+        className={
+          toggle
+          ? `${styles['nav-toggle']} ${styles['nav-toggle-open']}`
+          : `${styles['nav-toggle']}`
+        }
+        onClick={() => showMenu(!toggle)}
+      >
+        <MenuIcon />
+      </div>
     </>
   )
 }

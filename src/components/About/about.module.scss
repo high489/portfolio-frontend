@@ -18,7 +18,6 @@
   column-gap: 1.875rem;
   align-items: flex-start;
   position: relative;
-  
 }
 
 .about-data::before {
@@ -78,6 +77,10 @@
   background-color: var(--lt-green-bg-color);
 }
 
+.position {
+  display: grid;
+}
+
 .position-title {
   display: flex;
   align-items: center;
@@ -128,6 +131,10 @@
   }
   .about-download-resume-btn {
     width: 100%;
+  }
+
+  .position {
+    min-height: 73px;
   }
 }
 

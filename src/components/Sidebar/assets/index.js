@@ -5,3 +5,4 @@ export { ReactComponent as ExperienceIcon } from './experience-icon.svg';
 export { ReactComponent as ProjectsIcon } from './projects-icon.svg';
 export { ReactComponent as ContactIcon } from './contact-icon.svg';
 export { ReactComponent as LogoIcon } from './logo-globe-icon.svg';
+export { ReactComponent as MenuIcon } from './menu-icon.svg';
