@@ -19,7 +19,8 @@
 
 .flag {
   position: absolute;
-  width: 110%;
+  max-width: 110%;
+  height: auto;
 }
 
 .selected-language {

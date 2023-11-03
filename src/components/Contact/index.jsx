@@ -1,8 +1,23 @@
 import styles from './contact.module.scss';
+import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { t } = useTranslation()
+  const formRef = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('service_fsxhlpa', 'template_ejiz8u5', formRef.current, 'SJO4SToV9TW9HL44f')
+      .then((result) => {
+        e.target.reset()
+        console.log(result.text)
+      }, (error) => {
+        console.log(error.text)
+      })
+  }
 
   return (
     <section className={`${styles.contact} container section`} id="contact">
@@ -18,19 +33,25 @@ const Contact = () => {
           </div>
         </div>
 
-        <form action="" className={styles['contact-form']}>
+        <form 
+          ref={formRef}
+          className={styles['contact-form']}
+          onSubmit={sendEmail}
+        >
 
           <div className={styles['contact-form-group']}>
 
             <div className={styles['contact-form-div']}>
               <input 
+                name='user_name'
                 type="text" 
                 className={styles['contact-form-input']} 
                 placeholder={ t('portfolio.contact.contactFormNamePh') } />
             </div>
 
             <div className={styles['contact-form-div']}>
-              <input 
+              <input
+                name='user_email'
                 type="email" 
                 className={styles['contact-form-input']} 
                 placeholder={ t('portfolio.contact.contactFormEmailPh') } />
@@ -39,7 +60,8 @@ const Contact = () => {
           </div>
 
           <div className={styles['contact-form-div']}>
-            <input 
+            <input
+              name='subject'
               type="text" 
               className={styles['contact-form-input']} 
               placeholder={ t('portfolio.contact.contactFormSubjectPh') }
@@ -48,15 +70,17 @@ const Contact = () => {
 
           <div className={`${styles['contact-form-div']} ${styles['contact-form-area']}`}>
             <textarea 
-              name='' id='' cols='30' rows='10'
+              name='message' id='' cols='30' rows='10'
               className={styles['contact-form-input']} 
               placeholder={ t('portfolio.contact.contactFormMessagePh') }
             ></textarea>
           </div>
 
-          <button className={`${styles['contact-form-btn']} btn`}>
-            { t('portfolio.contact.contactFormSubmit') }
-          </button>
+          <input
+            type='submit'
+            value={ t('portfolio.contact.contactFormSubmit') }
+            className={`${styles['contact-form-btn']} btn`}
+          />
 
         </form>
 
