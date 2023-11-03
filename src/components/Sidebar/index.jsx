@@ -19,24 +19,23 @@ const Sidebar = () => {
   const [toggle, showMenu] = useState(false)
 
   const sidebarRef = useRef(null);
+  const menuBtnRef = useRef(null);
 
   useEffect(() => {
-    const sidebar = sidebarRef.current;
-
-    const preventTouchMove = (event) => {
-      event.preventDefault();
-    };
-
-    if (sidebar) {
-      sidebar.addEventListener('touchmove', preventTouchMove);
-    }
-
-    return () => {
-      if (sidebar) {
-        sidebar.removeEventListener('touchmove', preventTouchMove);
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && menuBtnRef.current) {
+        if (!sidebarRef.current.contains(event.target) && !menuBtnRef.current.contains(event.target)) {
+          showMenu(false)
+        }
       }
     };
-  }, []);
+
+    document.addEventListener('mousedown', handleClickOutside)
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
 
   return (
     <>
@@ -99,7 +98,8 @@ const Sidebar = () => {
 
       </aside>
 
-      <div 
+      <div
+        ref={menuBtnRef}
         className={
           toggle
           ? `${styles['nav-toggle']} ${styles['nav-toggle-open']}`
