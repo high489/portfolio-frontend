@@ -12,6 +12,9 @@
   border: 5.5px solid var(--border-color);
   border-radius: 15%;
   cursor: pointer;
+
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .flag {
