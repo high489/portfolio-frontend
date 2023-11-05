@@ -10,7 +10,8 @@ import {
   ExperienceIcon,
   ProjectsIcon,
   ContactIcon,
-  MenuIcon,
+  MenuClosedIcon,
+  MenuOpenedIcon,
 } from './assets';
 import { useEffect, useRef, useState } from 'react';
 
@@ -107,7 +108,7 @@ const Sidebar = () => {
         }
         onClick={() => showMenu(!toggle)}
       >
-        <MenuIcon />
+        {toggle ? <MenuOpenedIcon /> : <MenuClosedIcon />}
       </div>
     </>
   )
