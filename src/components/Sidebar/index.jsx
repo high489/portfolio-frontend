@@ -55,37 +55,61 @@ const Sidebar = () => {
           <ul className={styles['nav-list']}>
 
             <li className={styles['nav-item']}>
-              <LinkScroll to="home" className={styles['nav-link']}>
+              <LinkScroll
+                to="home"
+                className={styles['nav-link']}
+                onClick={() => showMenu(false)}
+              >
                 <HomeIcon />
               </LinkScroll>
             </li>
 
             <li className={styles['nav-item']}>
-              <LinkScroll to="about" offset={0} className={styles['nav-link']}>
+              <LinkScroll
+                to="about"
+                className={styles['nav-link']}
+                onClick={() => showMenu(false)}
+              >
                 <AboutIcon />
               </LinkScroll>
             </li>
 
             <li className={styles['nav-item']}>
-              <LinkScroll to="skills" className={styles['nav-link']}>
+              <LinkScroll
+                to="skills"
+                className={styles['nav-link']}
+                onClick={() => showMenu(false)}
+              >
                 <SkillsIcon />
               </LinkScroll>
             </li>
 
             <li className={styles['nav-item']}>
-              <LinkScroll to="experience" className={styles['nav-link']}>
+              <LinkScroll
+                to="experience"
+                className={styles['nav-link']}
+                onClick={() => showMenu(false)}
+              >
                 <ExperienceIcon />
               </LinkScroll>
             </li>
 
             <li className={styles['nav-item']}>
-              <LinkScroll to="projects" className={styles['nav-link']}>
+              <LinkScroll
+                to="projects"
+                className={styles['nav-link']}
+                onClick={() => showMenu(false)}
+              >
                 <ProjectsIcon />
               </LinkScroll>
             </li>
 
             <li className={styles['nav-item']}>
-              <LinkScroll to="contact" className={styles['nav-link']}>
+              <LinkScroll
+                to="contact" 
+                className={styles['nav-link']}
+                onClick={() => showMenu(false)}
+              >
                 <ContactIcon />
               </LinkScroll>
             </li>
