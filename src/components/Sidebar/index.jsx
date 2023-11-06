@@ -17,7 +17,7 @@ import { useEffect, useRef, useState } from 'react';
 
 const Sidebar = () => {
   const { i18n } = useTranslation()
-  const [toggle, showMenu] = useState(false)
+  const [ toggle, showMenu ] = useState(false)
 
   const sidebarRef = useRef(null);
   const menuBtnRef = useRef(null);
@@ -49,7 +49,11 @@ const Sidebar = () => {
         ref={sidebarRef}
       >
 
-        <LanguageSelector languages={i18n.options.resources} currentLanguage={i18n.resolvedLanguage} />
+        <LanguageSelector 
+          handleHideSidebar={() => showMenu(false)} 
+          languages={i18n.options.resources} 
+          currentLanguage={i18n.resolvedLanguage}
+        />
 
         <nav className={styles.nav}>
           <ul className={styles['nav-list']}>

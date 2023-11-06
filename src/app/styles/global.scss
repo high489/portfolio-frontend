@@ -26,7 +26,11 @@
   user-select: none;
 }
 
-.section-title::before {
+.section-title-text {
+  position: relative;
+}
+
+.section-title-text::before {
   content: '';
   background: url('../assets/dots-bg.svg');
   height: 2.25rem;
@@ -60,4 +64,10 @@
 
 .btn:hover {
   animation: button-push 0.3s linear 1;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    text-align: center;
+  }
 }

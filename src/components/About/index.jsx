@@ -15,7 +15,9 @@ const About = () => {
 
   return (
     <section className={`${styles.about} container section`} id="about">
-      <h2 className='section-title'>{ t('portfolio.about.sectionTitle') }</h2>
+      <h2 className='section-title'>
+        <span className='section-title-text'>{ t('portfolio.about.sectionTitle') }</span>
+      </h2>
 
       <div className={`${styles['about-container']} grid`}>
         

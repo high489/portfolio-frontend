@@ -21,7 +21,9 @@ const Contact = () => {
 
   return (
     <section className={`${styles.contact} container section`} id="contact">
-      <h2 className='section-title'>{ t('portfolio.contact.sectionTitle') }</h2>
+      <h2 className='section-title'>
+        <span className='section-title-text'>{ t('portfolio.contact.sectionTitle') }</span>
+      </h2>
 
       <div className={`${styles['contact-container']} grid`}>
 

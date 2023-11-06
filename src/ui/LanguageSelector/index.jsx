@@ -3,7 +3,7 @@ import { CSSTransition } from 'react-transition-group';
 import { useTranslation } from 'react-i18next';
 import styles from './language-selector.module.scss';
 
-const LanguageSelector = ({ languages, currentLanguage }) => {
+const LanguageSelector = ({ handleHideSidebar, languages, currentLanguage }) => {
   const SelectedLanguageFlag = languages[currentLanguage].flag
   const { i18n } = useTranslation()
   const [ showOptions, setShowOptions ] = useState(false)
@@ -29,6 +29,7 @@ const LanguageSelector = ({ languages, currentLanguage }) => {
   const handleLanguageSelect = (language) => {
     setTimeout(() => {
       i18n.changeLanguage(language)
+      handleHideSidebar()
     }, 150);
     setShowOptions(false)
     
