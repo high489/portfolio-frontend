@@ -60,3 +60,9 @@
     opacity: .7;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .scroll-down {
+    bottom: 25%;
+  }
+}

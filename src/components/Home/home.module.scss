@@ -56,3 +56,10 @@
   width: 180px;
   white-space: nowrap;
 }
+
+@media screen and (max-width: 768px) {
+  .home {
+    align-items: flex-start;
+    margin-top: 30%;
+  }
+}
