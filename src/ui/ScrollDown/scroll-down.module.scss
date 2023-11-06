@@ -48,3 +48,15 @@
   transform: translateX(-50%);
   animation: ani-mouse 2s linear infinite;
 }
+
+@media(pointer: coarse) {
+  .mouse {
+    height: 2rem;
+    border-radius: 0.3rem;
+  }
+  .wheel {
+    width: 0.5rem;
+    height: 0.5rem;
+    opacity: .7;
+  }
+}
