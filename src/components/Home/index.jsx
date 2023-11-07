@@ -37,8 +37,9 @@ const Home = () => {
           <ScrollDown text={ t('ui.scrollElementText') }/>
         </div>
         
-        <Forest />
+        
       </section>
+      <Forest />
     </>
   )
 }
