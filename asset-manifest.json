@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-frontend/static/css/main.c5c5ff75.css",
-    "main.js": "/portfolio-frontend/static/js/main.b1b22a23.js",
+    "main.css": "/portfolio-frontend/static/css/main.0f2e52a4.css",
+    "main.js": "/portfolio-frontend/static/js/main.2d30e9ca.js",
     "static/js/787.c78a8ab9.chunk.js": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js",
     "static/media/me.svg": "/portfolio-frontend/static/media/me.3f8a487620d4905043706358834d1c94.svg",
     "static/media/developer.svg": "/portfolio-frontend/static/media/developer.9e15fc4bcc5d3cb5c133fb3a53a9335a.svg",
@@ -29,12 +29,12 @@
     "static/media/experience-icon.svg": "/portfolio-frontend/static/media/experience-icon.791efb9574b82b9797405422666e0222.svg",
     "static/media/rus.svg": "/portfolio-frontend/static/media/rus.365e2a0862a1881e104aba5eb55b174a.svg",
     "index.html": "/portfolio-frontend/index.html",
-    "main.c5c5ff75.css.map": "/portfolio-frontend/static/css/main.c5c5ff75.css.map",
-    "main.b1b22a23.js.map": "/portfolio-frontend/static/js/main.b1b22a23.js.map",
+    "main.0f2e52a4.css.map": "/portfolio-frontend/static/css/main.0f2e52a4.css.map",
+    "main.2d30e9ca.js.map": "/portfolio-frontend/static/js/main.2d30e9ca.js.map",
     "787.c78a8ab9.chunk.js.map": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5c5ff75.css",
-    "static/js/main.b1b22a23.js"
+    "static/css/main.0f2e52a4.css",
+    "static/js/main.2d30e9ca.js"
   ]
 }
