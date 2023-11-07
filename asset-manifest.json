@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio-frontend/static/css/main.0f2e52a4.css",
-    "main.js": "/portfolio-frontend/static/js/main.2d30e9ca.js",
+    "main.css": "/portfolio-frontend/static/css/main.097377e4.css",
+    "main.js": "/portfolio-frontend/static/js/main.ae03b965.js",
     "static/js/787.c78a8ab9.chunk.js": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js",
+    "static/media/pet-countries.svg": "/portfolio-frontend/static/media/pet-countries.078517eada787d9dce5fea4f01de4c91.svg",
     "static/media/me.svg": "/portfolio-frontend/static/media/me.3f8a487620d4905043706358834d1c94.svg",
     "static/media/developer.svg": "/portfolio-frontend/static/media/developer.9e15fc4bcc5d3cb5c133fb3a53a9335a.svg",
     "static/media/sun.svg": "/portfolio-frontend/static/media/sun.be0366e342e49049217a5ecd7b7f7376.svg",
@@ -14,8 +15,11 @@
     "static/media/dots-bg.svg": "/portfolio-frontend/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
     "static/media/tree2.svg": "/portfolio-frontend/static/media/tree2.f9e1dc087d32248ced433b7439f4557b.svg",
     "static/media/tree1.svg": "/portfolio-frontend/static/media/tree1.70a2c7cf6e6fe2dcfe9cb9a56f76c1d9.svg",
+    "static/media/future-pet1.svg": "/portfolio-frontend/static/media/future-pet1.e90567921bfb651f5ca6b94550478652.svg",
     "static/media/sense-of-justice.svg": "/portfolio-frontend/static/media/sense-of-justice.4606c0bea073b4476d6f25e4e60d678f.svg",
+    "static/media/future-pet2.svg": "/portfolio-frontend/static/media/future-pet2.0c57c451141d03b607471e2a59cfcaf0.svg",
     "static/media/eng.svg": "/portfolio-frontend/static/media/eng.fa95d3956cb5fd6250d357b5f02cbcc9.svg",
+    "static/media/future-pets.svg": "/portfolio-frontend/static/media/future-pets.8c320600e7da457194ee1478b967e64b.svg",
     "static/media/menu-closed.svg": "/portfolio-frontend/static/media/menu-closed.838ee8149a8789718dd0f99fabb9202b.svg",
     "static/media/github-icon.svg": "/portfolio-frontend/static/media/github-icon.6389e8d48ab73a2cee4622ecc8fba001.svg",
     "static/media/menu-opened.svg": "/portfolio-frontend/static/media/menu-opened.f035c8d8776871f2c2ffc19cb12560b5.svg",
@@ -29,12 +33,13 @@
     "static/media/experience-icon.svg": "/portfolio-frontend/static/media/experience-icon.791efb9574b82b9797405422666e0222.svg",
     "static/media/rus.svg": "/portfolio-frontend/static/media/rus.365e2a0862a1881e104aba5eb55b174a.svg",
     "index.html": "/portfolio-frontend/index.html",
-    "main.0f2e52a4.css.map": "/portfolio-frontend/static/css/main.0f2e52a4.css.map",
-    "main.2d30e9ca.js.map": "/portfolio-frontend/static/js/main.2d30e9ca.js.map",
+    "static/media/link-icon.svg": "/portfolio-frontend/static/media/link-icon.cbfa9e44d765eac798db52008e871008.svg",
+    "main.097377e4.css.map": "/portfolio-frontend/static/css/main.097377e4.css.map",
+    "main.ae03b965.js.map": "/portfolio-frontend/static/js/main.ae03b965.js.map",
     "787.c78a8ab9.chunk.js.map": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f2e52a4.css",
-    "static/js/main.2d30e9ca.js"
+    "static/css/main.097377e4.css",
+    "static/js/main.ae03b965.js"
   ]
 }
