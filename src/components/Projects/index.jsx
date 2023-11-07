@@ -13,7 +13,7 @@ const projectsData = [
   {
     id: 1,
     image: PetCoutriesImage,
-    title: "Countries",
+    title: "Countries Statistics",
     stack: {
       framework: "React",
       stateManager: "Redux Toolkit",
