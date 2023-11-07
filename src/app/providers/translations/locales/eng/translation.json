@@ -17,6 +17,14 @@
       "position2": "QA Engineer",
       "position2Exp": "4 years"
     },
+    "projects": {
+      "sectionTitle": "Projects",
+      "categories": {
+        "all": "All",
+        "react": "React",
+        "future": "Future"
+      }
+    },
     "contact": {
       "sectionTitle": "Get In Touch",
       "contactTitle": "Let's talk about everything!",

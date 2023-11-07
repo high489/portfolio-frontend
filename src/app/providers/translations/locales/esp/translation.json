@@ -17,6 +17,14 @@
       "position2": "Ingeniero de Calidad (QA)",
       "position2Exp": "4 años"
     },
+    "projects": {
+      "sectionTitle": "Proyectos",
+      "categories": {
+        "all": "Todos",
+        "react": "React",
+        "future": "Futuros"
+      }
+    },
     "contact": {
       "sectionTitle": "Estar En Contacto",
       "contactTitle": "Podemos hablar de todo!",

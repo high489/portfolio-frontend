@@ -17,6 +17,14 @@
       "position2": "Tестировщик (QA)",
       "position2Exp": "4 года"
     },
+    "projects": {
+      "sectionTitle": "Проекты",
+      "categories": {
+        "all": "Все",
+        "react": "React",
+        "future": "Будущие"
+      }
+    },
     "contact": {
       "sectionTitle": "Будем На Связи",
       "contactTitle": "Можем обсудить что угодно!",
