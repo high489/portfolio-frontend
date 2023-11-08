@@ -10,12 +10,9 @@
 .contact-title {
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
-  user-select: none;
 }
 
-.contact-details {
-  user-select: none;
-}
+// .contact-details {}
 
 .details-text {
   white-space: pre-line;
@@ -59,7 +56,6 @@
   z-index: 1;
 }
 .contact-form-input::placeholder {
-  user-select: none;
   opacity: .7;
 }
 
