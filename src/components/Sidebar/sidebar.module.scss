@@ -5,9 +5,9 @@
   background: var(--container-color);
   box-shadow: var(--shadow);
   //border-right: 1px solid hsla(204, 23%, 41%, 0.3);
-  padding: 2.5rem 2.5rem 35vh 2.5rem;
+  padding: 2.5rem;
   width: 110px;
-  height: 120vh;
+  height: 100vh;
   min-height: 100vh;
   overflow: hidden;
   display: flex;
@@ -107,5 +107,12 @@
   }
   .show-menu {
     left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .aside {
+    padding: 2.5rem 2.5rem 35vh 2.5rem;
+    height: 120vh;
   }
 }
