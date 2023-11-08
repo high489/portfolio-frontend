@@ -3,12 +3,12 @@ import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
-import engTranslation from 'app/providers/translations/locales/eng/translation.json';
-import { ReactComponent as EngFlag } from 'app/providers/translations/locales/eng/eng.svg';
-import espTranslation from 'app/providers/translations/locales/esp/translation.json';
-import { ReactComponent as EspFlag } from 'app/providers/translations/locales/esp/esp.svg';
-import rusTranslation from 'app/providers/translations/locales/rus/translation.json';
-import { ReactComponent as RusFlag } from 'app/providers/translations/locales/rus/rus.svg';
+import enTranslation from 'app/providers/translations/locales/en/translation.json';
+import { ReactComponent as EnFlag } from 'app/providers/translations/locales/en/en.svg';
+import esTranslation from 'app/providers/translations/locales/es/translation.json';
+import { ReactComponent as EsFlag } from 'app/providers/translations/locales/es/es.svg';
+import ruTranslation from 'app/providers/translations/locales/ru/translation.json';
+import { ReactComponent as RuFlag } from 'app/providers/translations/locales/ru/ru.svg';
 
 i18n
   //.use(Backend)
@@ -16,23 +16,23 @@ i18n
   .use(initReactI18next)
   .init({
     debug: false,
-    fallbackLng: 'eng',
-    whitelist: ['eng', 'esp', 'rus'],
+    //fallbackLng: 'en',
+    whitelist: ['en', 'es', 'ru'],
     resources: {
       eng: {
         name: "English",
-        flag: EngFlag,
-        translation: engTranslation,
+        flag: EnFlag,
+        translation: enTranslation,
       },
       esp: {
         name: "Español",
-        flag: EspFlag,
-        translation: espTranslation,
+        flag: EsFlag,
+        translation: esTranslation,
       },
       rus: {
         name: "Русский",
-        flag: RusFlag,
-        translation: rusTranslation,
+        flag: RuFlag,
+        translation: ruTranslation,
       },
     },
   })
