@@ -19,11 +19,8 @@
     },
     "projects": {
       "sectionTitle": "Проекты",
-      "categories": {
-        "all": "Все",
-        "react": "React",
-        "future": "Будущие"
-      }
+      "categoryAll": "Все",
+      "stack": "Стэк"
     },
     "contact": {
       "sectionTitle": "Будем На Связи",

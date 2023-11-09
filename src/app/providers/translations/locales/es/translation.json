@@ -19,11 +19,8 @@
     },
     "projects": {
       "sectionTitle": "Proyectos",
-      "categories": {
-        "all": "Todos",
-        "react": "React",
-        "future": "Futuros"
-      }
+      "categoryAll": "Todos",
+      "stack": "Pila"
     },
     "contact": {
       "sectionTitle": "Estar En Contacto",

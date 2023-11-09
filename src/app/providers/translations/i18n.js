@@ -16,20 +16,20 @@ i18n
   .use(initReactI18next)
   .init({
     debug: false,
-    //fallbackLng: 'en',
+    fallbackLng: 'en',
     whitelist: ['en', 'es', 'ru'],
     resources: {
-      eng: {
+      en: {
         name: "English",
         flag: EnFlag,
         translation: enTranslation,
       },
-      esp: {
+      es: {
         name: "Español",
         flag: EsFlag,
         translation: esTranslation,
       },
-      rus: {
+      ru: {
         name: "Русский",
         flag: RuFlag,
         translation: ruTranslation,

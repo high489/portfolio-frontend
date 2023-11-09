@@ -19,11 +19,8 @@
     },
     "projects": {
       "sectionTitle": "Projects",
-      "categories": {
-        "all": "All",
-        "react": "React",
-        "future": "Future"
-      }
+      "categoryAll": "All",
+      "stack": "Stack"
     },
     "contact": {
       "sectionTitle": "Get In Touch",

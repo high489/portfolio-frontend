@@ -1,49 +1,19 @@
 import styles from './projects.module.scss';
+import { useStore } from 'app/providers/StoreProvider';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { 
-  PetCoutriesImage,
-  FuturePet1Image,
-  FuturePet2Image,
-  LinkIcon,
-} from './assets';
-
-const projectsData = [
-  {
-    id: 1,
-    image: PetCoutriesImage,
-    title: "Countries Statistics",
-    stack: {
-      framework: "React",
-      stateManager: "Redux Toolkit",
-      styles: "styled-components",
-    },
-    link: "https://high489.github.io/react-pet-countriesapi/",
-    category: "React",
-  },
-  {
-    id: 2,
-    image: FuturePet1Image,
-    title: "Future Project",
-    link: "#projects",
-    category: "Future",
-  },
-  {
-    id: 3,
-    image: FuturePet2Image,
-    title: "Future Project",
-    link: "#projects",
-    category: "Future",
-  },
-];
+import { LinkIcon } from './assets';
 
 const Projects = () => {
-  const { t } = useTranslation()
-  const [projects, setProjects] = useState(projectsData)
+  const { projectsData } = useStore();
+  const [ projects, setProjects ] = useState(projectsData.projectsInfo)
+  const { t, i18n } = useTranslation()
+  const language = i18n.resolvedLanguage
+  const projectsCategories = Object.keys(projectsData.projectsCategoriesInfo)
 
   const filterProjectsByCategory = (projectsCategory) => {
-    const filteredProjects = projectsData.filter(el => el.category === projectsCategory)
+    const filteredProjects = projectsData.projectsInfo.filter(el => el.category === projectsCategory)
     setProjects(filteredProjects)
   }
 
@@ -56,27 +26,29 @@ const Projects = () => {
       <div className={styles['projects-filters']}>
         <span 
           className={styles['projects-filter']}
-          onClick={() => setProjects(projectsData)}
+          onClick={() => setProjects(projectsData.projectsInfo)}
         >
-          { t('portfolio.projects.categories.all') }
+          { t('portfolio.projects.categoryAll') }
         </span>
-        <span
-          className={styles['projects-filter']}
-          onClick={() => filterProjectsByCategory('React')}
-        >
-          { t('portfolio.projects.categories.react') }
-        </span>
-        <span 
-          className={styles['projects-filter']}
-          onClick={() => filterProjectsByCategory('Future')}
-        >
-          { t('portfolio.projects.categories.future') }
-        </span>
+
+        {projectsCategories.map(category => {
+          return (
+            <span
+              key={category}
+              className={styles['projects-filter']}
+              onClick={() => filterProjectsByCategory(category)}
+            >
+              { projectsData.projectsCategoriesInfo[category].translations[language] }
+            </span>
+          )
+        })}
+        
       </div>
       
       <div className={`${styles['projects-container']} grid`}>
         {projects.map(({id, image, title, stack, link, category}) => {
           let ProjectImage = image
+          let projectCategory = projectsData.projectsCategoriesInfo[category].translations[language]
 
           return (
             <div className={styles['project-card']} key={id}>
@@ -85,14 +57,17 @@ const Projects = () => {
                 <div className={styles['project-mask']}></div>
               </div>
 
-              <span className={styles['project-category']}>{ category }</span>
-              <h3 className={styles['project-title']}>{ title }</h3>
+              <span className={styles['project-category']}>{ projectCategory }</span>
+              <h3 className={styles['project-title']}>{ title[language] }</h3>
               <div className={styles['project-stack']}>
-                {stack && Object.values(stack).map(value => {
-                  return (
-                    <div key={value}>{value}</div>
-                  )
-                })}
+                <div
+                  style={{display: stack ? "block" : "none"}}
+                  className={styles['project-stack-title']}>
+                  { t('portfolio.projects.stack') }:
+                </div>
+                {stack && Object.values(stack).map(value => (
+                  <div key={value}>{value}</div>
+                ))}
               </div>
               <a
                 href={link}
