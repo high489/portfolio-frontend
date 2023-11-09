@@ -1,4 +1,4 @@
-import { FuturePet1Image, FuturePet2Image, PetCoutriesImage } from 'app/assets/projects';
+import { FuturePet1Image, FuturePet2Image, PetCoutriesImage } from 'app/assets';
 
 export const mockData = {
   projectsData: {
