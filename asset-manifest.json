@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-frontend/static/css/main.eb696f08.css",
-    "main.js": "/portfolio-frontend/static/js/main.8b54f2c1.js",
+    "main.js": "/portfolio-frontend/static/js/main.a0201c99.js",
     "static/js/787.c78a8ab9.chunk.js": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js",
     "static/media/pet-countries.svg": "/portfolio-frontend/static/media/pet-countries.078517eada787d9dce5fea4f01de4c91.svg",
     "static/media/me.svg": "/portfolio-frontend/static/media/me.3f8a487620d4905043706358834d1c94.svg",
@@ -19,7 +19,6 @@
     "static/media/sense-of-justice.svg": "/portfolio-frontend/static/media/sense-of-justice.4606c0bea073b4476d6f25e4e60d678f.svg",
     "static/media/future-pet2.svg": "/portfolio-frontend/static/media/future-pet2.0c57c451141d03b607471e2a59cfcaf0.svg",
     "static/media/en.svg": "/portfolio-frontend/static/media/en.fa95d3956cb5fd6250d357b5f02cbcc9.svg",
-    "static/media/future-pets.svg": "/portfolio-frontend/static/media/future-pets.8c320600e7da457194ee1478b967e64b.svg",
     "static/media/menu-closed.svg": "/portfolio-frontend/static/media/menu-closed.838ee8149a8789718dd0f99fabb9202b.svg",
     "static/media/github-icon.svg": "/portfolio-frontend/static/media/github-icon.6389e8d48ab73a2cee4622ecc8fba001.svg",
     "static/media/menu-opened.svg": "/portfolio-frontend/static/media/menu-opened.f035c8d8776871f2c2ffc19cb12560b5.svg",
@@ -35,11 +34,11 @@
     "index.html": "/portfolio-frontend/index.html",
     "static/media/link-icon.svg": "/portfolio-frontend/static/media/link-icon.cbfa9e44d765eac798db52008e871008.svg",
     "main.eb696f08.css.map": "/portfolio-frontend/static/css/main.eb696f08.css.map",
-    "main.8b54f2c1.js.map": "/portfolio-frontend/static/js/main.8b54f2c1.js.map",
+    "main.a0201c99.js.map": "/portfolio-frontend/static/js/main.a0201c99.js.map",
     "787.c78a8ab9.chunk.js.map": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb696f08.css",
-    "static/js/main.8b54f2c1.js"
+    "static/js/main.a0201c99.js"
   ]
 }
