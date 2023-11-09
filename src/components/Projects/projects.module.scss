@@ -93,16 +93,17 @@
 .project-stack {
   color: #fff;
   text-align: right;
-  bottom: 3.75rem;
-  right: 1.25rem;
+  bottom: 1.25rem;
+  right: 1.5rem;
   position: absolute;
-  transform: translateX(30px);
+  transform: translateY(30px);
   transition: .3s;
   opacity: 0;
 }
 
 .project-stack-title {
   font-weight: var(--font-semibold);
+  margin-bottom: 0.25rem;
 }
 
 .project-link {
