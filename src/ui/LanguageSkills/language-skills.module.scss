@@ -1,6 +1,10 @@
 .language-skills {
   display: grid;
   row-gap: 1.25rem;
+  padding: 1.875rem;
+  background-color: var(--container-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
 }
 
 .language-skills-title {
@@ -35,3 +39,15 @@
 .language-percentage {
   display: block;
 }
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+  .language-skills {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {}

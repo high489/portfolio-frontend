@@ -1,13 +1,12 @@
 import styles from './skills.module.scss';
 import { useStore } from 'app/providers/StoreProvider';
-//import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { LanguageSkills } from 'ui';
+import { LanguageSkills, TechnicalSkills } from 'ui';
 
 const Skills = () => {
   const { t, i18n } = useTranslation()
-  const { skillsData } = useStore()
+  const { technicalSkillsData, languageSkillsData } = useStore()
 
   return (
     <section className={`${styles.skills} container section`} id="skills">
@@ -16,16 +15,17 @@ const Skills = () => {
       </h2>
 
       <div className={`${styles['skills-container']} grid`}>
+        
+        <TechnicalSkills
+          technicalSkillsInfo={technicalSkillsData.technicalSkillsInfo}
+        />
 
-        <div className={`${styles['skills-data']} ${styles['skills-list']} grid`}>skills icons</div>
+        <LanguageSkills
+          languageSkillsTitle={languageSkillsData.languageSkillsTitle}
+          languageSkillsInfo={languageSkillsData.languageSkillsInfo}
+          resolvedLanguage={i18n.resolvedLanguage}
+        />
 
-        <div className={styles['skills-data']}>
-          <LanguageSkills
-            languageSkillsTitle={skillsData.languagesData.languagesTitle}
-            languageSkills={skillsData.languagesData.languagesInfo}
-            resolvedLanguage={i18n.resolvedLanguage}
-          />
-        </div>
       </div>
     </section>
   )

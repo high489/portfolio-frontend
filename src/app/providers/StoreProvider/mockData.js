@@ -14,8 +14,8 @@ import {
 import { FuturePet1Image, FuturePet2Image, PetCoutriesImage } from 'app/assets/projects';
 
 export const mockData = {
-  skillsData: {
-    skillsInfo: [
+  technicalSkillsData: {
+    technicalSkillsInfo: [
       {
         id: 1,
         title: "HTML",
@@ -83,52 +83,52 @@ export const mockData = {
         grade: 6,
       },
     ],
-    languagesData: {
-      languagesTitle: {
-        en: "Languages",
-        es: "Idiomas",
-        ru: "Языки",
-      },
-      languagesInfo: [
-        {
-          id: 1,
-          title: {
-            en: "Russian",
-            es: "Ruso",
-            ru: "Русский",
-          },
-          levelName: {
-            en: "Native",
-            es: "Nativo",
-            ru: "Родной",
-          },
-          levelPercentage: "100%",
-          barColor: "#F76D57",
-        },
-        {
-          id: 2,
-          title: {
-            en: "English",
-            es: "Inglés",
-            ru: "Английский",
-          },
-          levelName: "B1-B2",
-          levelPercentage: "70%",
-          barColor: "#45AAB8",
-        },
-        {
-          id: 3,
-          title: {
-            en: "Spanish",
-            es: "Español",
-            ru: "Испанский",
-          },
-          levelName: "A1-A2",
-          levelPercentage: "30%",
-          barColor: "#506C7F",
-        },
-      ],
+  },
+  languageSkillsData: {
+    languageSkillsTitle: {
+      en: "Languages",
+      es: "Idiomas",
+      ru: "Языки",
     },
+    languageSkillsInfo: [
+      {
+        id: 1,
+        title: {
+          en: "Russian",
+          es: "Ruso",
+          ru: "Русский",
+        },
+        levelName: {
+          en: "Native",
+          es: "Nativo",
+          ru: "Родной",
+        },
+        levelPercentage: "100%",
+        barColor: "#F76D57",
+      },
+      {
+        id: 2,
+        title: {
+          en: "English",
+          es: "Inglés",
+          ru: "Английский",
+        },
+        levelName: "B1-B2",
+        levelPercentage: "70%",
+        barColor: "#45AAB8",
+      },
+      {
+        id: 3,
+        title: {
+          en: "Spanish",
+          es: "Español",
+          ru: "Испанский",
+        },
+        levelName: "A1-A2",
+        levelPercentage: "30%",
+        barColor: "#506C7F",
+      },
+    ],
   },
   projectsData: {
     projectsInfo: [

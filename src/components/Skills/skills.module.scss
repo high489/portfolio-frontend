@@ -3,9 +3,20 @@
   column-gap: 1.875rem;
 }
 
-.skills-data {
-  padding: 1.875rem;
-  background-color: var(--container-color);
-  box-shadow: var(--shadow);
-  border-radius: var(--border-radius);
+@media screen and (max-width: 1024px) {
+  .skills-container {
+    grid-template-columns: 720px;
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
 }
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 350px) {}

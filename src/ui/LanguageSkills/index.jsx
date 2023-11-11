@@ -1,11 +1,11 @@
 import styles from './language-skills.module.scss';
 
-const LanguageSkills = ({ languageSkillsTitle, languageSkills, resolvedLanguage }) => {
+const LanguageSkills = ({ languageSkillsTitle, languageSkillsInfo, resolvedLanguage }) => {
   return (
     <div className={styles['language-skills']}>
       <h3 className={styles['language-skills-title']}>{ languageSkillsTitle[resolvedLanguage] }</h3>
 
-      {languageSkills.map(({ id, title, levelName, levelPercentage, barColor}) => {
+      {languageSkillsInfo.map(({ id, title, levelName, levelPercentage, barColor}) => {
         
         let translatedTitle = title[resolvedLanguage]
         let translatedLevelName = 
