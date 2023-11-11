@@ -17,6 +17,9 @@
       "position2": "QA Engineer",
       "position2Exp": "4 years"
     },
+    "skills": {
+      "sectionTitle": "Skills"
+    },
     "projects": {
       "sectionTitle": "Projects",
       "categoryAll": "All",

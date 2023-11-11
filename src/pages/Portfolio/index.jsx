@@ -1,7 +1,7 @@
 import styles from './portfolio.module.scss';
 
-import { Sidebar, Home, About, Projects, Contact } from 'components';
-//import { Skills, Experience } from 'components';
+import { Sidebar, Home, About, Skills, Projects, Contact } from 'components';
+//import { Experience } from 'components';
 
 const Portfolio = () => {
   return (
@@ -10,8 +10,8 @@ const Portfolio = () => {
       <main className={styles.main}>
         <Home />
         <About />
-        {/* <Skills />
-        <Experience /> */}
+        <Skills />
+        {/* <Experience /> */}
         <Projects />
         <Contact />
       </main>

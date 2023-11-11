@@ -1,0 +1,37 @@
+.language-skills {
+  display: grid;
+  row-gap: 1.25rem;
+}
+
+.language-skills-title {
+  text-align: center;
+}
+
+.language-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.language-name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+// .language-level {
+//   line-height: 1.2;
+// }
+
+.language-bar,
+.language-percentage {
+  height: 7px;
+  border-radius: 0.25rem;
+}
+
+.language-bar {
+  background-color: #f1f1f1;
+}
+
+.language-percentage {
+  display: block;
+}

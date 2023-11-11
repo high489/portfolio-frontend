@@ -1,0 +1,11 @@
+.skills-container {
+  grid-template-columns: 6fr 4fr;
+  column-gap: 1.875rem;
+}
+
+.skills-data {
+  padding: 1.875rem;
+  background-color: var(--container-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+}

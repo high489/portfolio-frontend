@@ -1,0 +1,11 @@
+export { ReactComponent as HtmlIcon } from './html-icon.svg';
+export { ReactComponent as CssIcon } from './css-icon.svg';
+export { ReactComponent as SassIcon } from './sass-icon.svg';
+export { ReactComponent as JavaScriptIcon } from './javascript-icon.svg';
+export { ReactComponent as TypeScriptIcon } from './typescript-icon.svg';
+export { ReactComponent as ReactIcon } from './react-icon.svg';
+export { ReactComponent as ReduxIcon } from './redux-icon.svg';
+export { ReactComponent as ReactRouterIcon } from './react-router-icon.svg';
+export { ReactComponent as StyledIcon } from './styled-components-icon.svg';
+export { ReactComponent as WebpackIcon } from './webpack-icon.svg';
+export { ReactComponent as GitIcon } from './git-icon.svg';
