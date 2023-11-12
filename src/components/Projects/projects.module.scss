@@ -27,6 +27,7 @@
   overflow: hidden;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  cursor: default;
 
   //fix safari browser overflow: hidden and rounded corners problem:
   transform: translate3d(0, 0, 0);

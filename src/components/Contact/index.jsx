@@ -1,14 +1,32 @@
 import styles from './contact.module.scss';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
+import { validateContactForm } from 'app/utils';
 
 const Contact = () => {
   const { t } = useTranslation()
   const formRef = useRef()
+  const [errors, setErrors] = useState({});
 
   const sendEmail = (e) => {
     e.preventDefault()
+
+    const formData = {
+      user_name: formRef.current.user_name.value,
+      user_email: formRef.current.user_email.value,
+      subject: formRef.current.subject.value,
+      message: formRef.current.message.value,
+    }
+
+    const formErrors = validateContactForm(formData);
+
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
+      return
+    }
+
+    setErrors({})
 
     emailjs.sendForm('service_fsxhlpa', 'template_ejiz8u5', formRef.current, 'SJO4SToV9TW9HL44f')
       .then((result) => {
@@ -47,7 +65,7 @@ const Contact = () => {
               <input 
                 name='user_name'
                 type="text" 
-                className={styles['contact-form-input']} 
+                className={`${styles['contact-form-input']} ${errors.nameError ? styles.invalid : ''}`}
                 placeholder={ t('portfolio.contact.contactFormNamePh') } />
             </div>
 
@@ -55,7 +73,7 @@ const Contact = () => {
               <input
                 name='user_email'
                 type="email" 
-                className={styles['contact-form-input']} 
+                className={`${styles['contact-form-input']} ${errors.emailError ? styles.invalid : ''}`}
                 placeholder={ t('portfolio.contact.contactFormEmailPh') } />
             </div>
 
@@ -65,7 +83,7 @@ const Contact = () => {
             <input
               name='subject'
               type="text" 
-              className={styles['contact-form-input']} 
+              className={`${styles['contact-form-input']} ${errors.subjectError ? styles.invalid : ''}`}
               placeholder={ t('portfolio.contact.contactFormSubjectPh') }
             />
           </div>
@@ -73,7 +91,7 @@ const Contact = () => {
           <div className={`${styles['contact-form-div']} ${styles['contact-form-area']}`}>
             <textarea 
               name='message' id='' cols='30' rows='10'
-              className={styles['contact-form-input']} 
+              className={`${styles['contact-form-input']} ${errors.messageError ? styles.invalid : ''}`}
               placeholder={ t('portfolio.contact.contactFormMessagePh') }
             ></textarea>
           </div>
