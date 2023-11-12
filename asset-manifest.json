@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-frontend/static/css/main.900624c7.css",
-    "main.js": "/portfolio-frontend/static/js/main.e6f28919.js",
+    "main.css": "/portfolio-frontend/static/css/main.fc6b48ab.css",
+    "main.js": "/portfolio-frontend/static/js/main.3468abcc.js",
     "static/js/787.c78a8ab9.chunk.js": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js",
     "static/media/pet-countries.svg": "/portfolio-frontend/static/media/pet-countries.078517eada787d9dce5fea4f01de4c91.svg",
     "static/media/me.svg": "/portfolio-frontend/static/media/me.3f8a487620d4905043706358834d1c94.svg",
@@ -29,8 +29,8 @@
     "static/media/github-icon.svg": "/portfolio-frontend/static/media/github-icon.6389e8d48ab73a2cee4622ecc8fba001.svg",
     "static/media/git-icon.svg": "/portfolio-frontend/static/media/git-icon.972a9664e471ff745423f65f7b5b73f3.svg",
     "static/media/menu-opened.svg": "/portfolio-frontend/static/media/menu-opened.f035c8d8776871f2c2ffc19cb12560b5.svg",
+    "static/media/javascript-icon.svg": "/portfolio-frontend/static/media/javascript-icon.ae69ac75ee18db0800eb1e3126e184ed.svg",
     "static/media/webpack-icon.svg": "/portfolio-frontend/static/media/webpack-icon.b0d9cb31f125ba1541774bf371694181.svg",
-    "static/media/javascript-icon.svg": "/portfolio-frontend/static/media/javascript-icon.756047668ce7e491b9da8d24d0b00c44.svg",
     "static/media/about-icon.svg": "/portfolio-frontend/static/media/about-icon.013b38c183ee49586371653a529f5417.svg",
     "static/media/honesty.svg": "/portfolio-frontend/static/media/honesty.ed8459e0b3e9d88b71a6a1d4dd23ca81.svg",
     "static/media/projects-icon.svg": "/portfolio-frontend/static/media/projects-icon.6efe94904d08029952e6538e6bbaf876.svg",
@@ -44,12 +44,12 @@
     "static/media/link-icon.svg": "/portfolio-frontend/static/media/link-icon.cbfa9e44d765eac798db52008e871008.svg",
     "static/media/css-icon.svg": "/portfolio-frontend/static/media/css-icon.261c5f4ffa3f036603858547fc222be6.svg",
     "static/media/html-icon.svg": "/portfolio-frontend/static/media/html-icon.d07fa89482ea367181a78823fddd7db9.svg",
-    "main.900624c7.css.map": "/portfolio-frontend/static/css/main.900624c7.css.map",
-    "main.e6f28919.js.map": "/portfolio-frontend/static/js/main.e6f28919.js.map",
+    "main.fc6b48ab.css.map": "/portfolio-frontend/static/css/main.fc6b48ab.css.map",
+    "main.3468abcc.js.map": "/portfolio-frontend/static/js/main.3468abcc.js.map",
     "787.c78a8ab9.chunk.js.map": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.900624c7.css",
-    "static/js/main.e6f28919.js"
+    "static/css/main.fc6b48ab.css",
+    "static/js/main.3468abcc.js"
   ]
 }
