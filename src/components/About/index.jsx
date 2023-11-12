@@ -5,9 +5,9 @@ import { MeIcon } from './assets';
 import { PersonalQualities } from 'ui';
 
 const resume = {
-  eng: 'https://docs.google.com/document/d/1XdNbo04bl0xqjDTxzZWR1USiQOYBvo7iryUUMBUweu4/export?format=pdf',
-  esp: 'https://docs.google.com/document/d/1Ay0KKkC9Q2b0sXydgCumB_gHTdukWnVY/export?format=pdf',
-  rus: 'https://docs.google.com/document/d/1_Zob0cEcBg-lWzGm9vsnu5o5xIHXBuBB/export?format=pdf',
+  en: 'https://docs.google.com/document/d/1XdNbo04bl0xqjDTxzZWR1USiQOYBvo7iryUUMBUweu4/export?format=pdf',
+  es: 'https://docs.google.com/document/d/1Ay0KKkC9Q2b0sXydgCumB_gHTdukWnVY/export?format=pdf',
+  ru: 'https://docs.google.com/document/d/1_Zob0cEcBg-lWzGm9vsnu5o5xIHXBuBB/export?format=pdf',
 }
 
 const About = () => {
