@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-frontend/static/css/main.900624c7.css",
-    "main.js": "/portfolio-frontend/static/js/main.e04301d0.js",
+    "main.js": "/portfolio-frontend/static/js/main.e6f28919.js",
     "static/js/787.c78a8ab9.chunk.js": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js",
     "static/media/pet-countries.svg": "/portfolio-frontend/static/media/pet-countries.078517eada787d9dce5fea4f01de4c91.svg",
     "static/media/me.svg": "/portfolio-frontend/static/media/me.3f8a487620d4905043706358834d1c94.svg",
@@ -45,11 +45,11 @@
     "static/media/css-icon.svg": "/portfolio-frontend/static/media/css-icon.261c5f4ffa3f036603858547fc222be6.svg",
     "static/media/html-icon.svg": "/portfolio-frontend/static/media/html-icon.d07fa89482ea367181a78823fddd7db9.svg",
     "main.900624c7.css.map": "/portfolio-frontend/static/css/main.900624c7.css.map",
-    "main.e04301d0.js.map": "/portfolio-frontend/static/js/main.e04301d0.js.map",
+    "main.e6f28919.js.map": "/portfolio-frontend/static/js/main.e6f28919.js.map",
     "787.c78a8ab9.chunk.js.map": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.900624c7.css",
-    "static/js/main.e04301d0.js"
+    "static/js/main.e6f28919.js"
   ]
 }
