@@ -1,0 +1,139 @@
+.job-card {
+  position: relative;
+  padding-left: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
+.job-card:last-child {
+  padding-bottom: 0;
+}
+
+.job-card::before {
+  content: '';
+  width: 1.5px;
+  height: 100%;
+  background-color: var(--first-color);
+  position: absolute;
+  left: .625rem;
+  top: 0;
+}
+
+.job-icon {
+  position: absolute;
+  left: -0.075rem;
+  top: 0;
+  background-color: var(--container-color);
+  padding: 0.2rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.job-icon > svg {
+  fill: var(--first-color);
+  width: 1.5rem;
+  height: auto;
+}
+
+.job-position {
+  margin-top: 0.125rem;
+  margin-bottom: 0.75rem;
+}
+
+// .job-company {}
+
+.company-name {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semibold);
+}
+
+.company-location {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.job-period {
+  margin-bottom: 0.75rem;
+  font-size: var(--small-font-size);
+  opacity: .75;
+}
+
+.responsibilities-title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.responsibilities-arrow {
+  display: none;
+}
+
+.responsibilities-list {
+  margin-top: 0.75rem;
+  list-style: outside;
+}
+
+.responsibilities-list > li {
+  line-height: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  opacity: .75;
+  list-style-type: disc;
+}
+
+@media screen and (max-width: 1024px) {
+  .responsibilities-wrapper {
+    padding: 0.875rem 1.5rem;
+    border: 1.5px solid var(--border-color);
+    border-radius: 1.875rem;
+  }
+  
+  .responsibilities-title-wrapper {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .responsibilities-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+  
+  .responsibilities-arrow {
+    display: block;
+    margin-left: 0.5rem;
+    fill: var(--text-color);
+    width: 1.2rem;
+    height: auto;
+    transition: .3s;
+  }
+  
+  .arrow-up {
+    transform: rotateX(180deg);
+    transition: .3s;
+  }
+  
+  .responsibilities-list {
+    margin-top: 0.75rem;
+    list-style: outside;
+  }
+  
+  .responsibilities-list > li {
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    opacity: .75;
+    list-style-type: disc;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .job-company {
+    margin-bottom: 0.25rem;
+  }
+  .company-location {
+    display: block;
+    font-weight: 400;
+  }
+}

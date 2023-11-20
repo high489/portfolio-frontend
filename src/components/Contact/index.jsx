@@ -6,8 +6,9 @@ import { validateContactForm } from 'app/utils';
 
 const Contact = () => {
   const { t } = useTranslation()
+  const [ errors, setErrors ] = useState({})
+  
   const formRef = useRef()
-  const [errors, setErrors] = useState({});
 
   const sendEmail = (e) => {
     e.preventDefault()

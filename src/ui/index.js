@@ -5,3 +5,4 @@ export { LanguageSelector } from './LanguageSelector';
 export { PersonalQualities } from './PersonalQualities';
 export { TechnicalSkills } from './TechnicalSkills';
 export { LanguageSkills } from './LanguageSkills';
+export { JobCard } from './JobCard';

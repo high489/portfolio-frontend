@@ -11,6 +11,7 @@ import {
   WebpackIcon,
   GitIcon,
 } from 'app/assets/skills';
+import { QAIcon, FrontendIcon } from 'app/assets';
 import { FuturePet1Image, FuturePet2Image, PetCoutriesImage } from 'app/assets/projects';
 
 export const mockData = {
@@ -127,6 +128,162 @@ export const mockData = {
         levelName: "A1-A2",
         levelPercentage: "30%",
         barColor: "#506C7F",
+      },
+    ],
+  },
+  experienceData: {
+    experienceInfo: [
+      {
+        id: 1,
+        category: "QA",
+        icon: QAIcon,
+        companyName: "ProcessMap",
+        companyLocation: {
+          en: "Miami, USA",
+          es: "Miami, EE.UU.",
+          ru: "Майами, США",
+        },
+        jobType: {
+          en: "remote",
+          es: "remoto",
+          ru: "удаленно",
+        },
+        position: {
+          en: "QA Engineer",
+          es: "Ingeniero de Calidad (QA)",
+          ru: "Тестировщик (QA)",
+        },
+        periodFrom: {
+          en: "April 2016",
+          es: "Abril 2016",
+          ru: "Апрель 2016",
+        }, 
+        periodTo: {
+          en: "June 2020",
+          es: "Junio 2016",
+          ru: "Июль 2016",
+        },
+        responsibilitiesData: {
+          responsibilitiesTitle: {
+            en: "Responsibilities",
+            es: "Responsabilidades",
+            ru: "Обязанности",
+          },
+          responsibilitiesInfo: [
+            {
+              id: 1,
+              description: {
+                en: "Prepared the test plan: wrote and updated manual test cases for team use, maintaining optimal organization for maximum productivity.",
+                es: "Preparación del plan de pruebas: escritura y actualización de escenarios. Optimización de escenarios para aumentar la eficiencia del plan.",
+                ru: "Подготовка тест-плана: написание и обновление тестовых сценариев. Оптимизация сценариев для эффективности тест-плана.",
+              },
+            },
+            {
+              id: 2,
+              description: {
+                en: "Prepared the simulated software production environment for testing.",
+                es: "Preparación del entorno de producción de software simulados para realizar las pruebas.",
+                ru: "Подготовка среды для проведения тестирования.",
+              },
+            },
+            {
+              id: 3,
+              description: {
+                en: "Conducted the test plan. Produced error reports with step-by-step guidance to reproduce them.",
+                es: "Realización del plan de pruebas. Elaboración de informes de errores con guía paso a paso para reproducirlos.",
+                ru: "Проведение тестирования согласно подготовленному тест-плану. Составление отчетов по выявленным ошибкам с пошаговым описанием для их воспроизведения.",
+              },
+            },
+            {
+              id: 4,
+              description: {
+                en: "Drafted process documentation to standardize operating procedures and techniques of test plan.",
+                es: "Escritura de la documentación sobre el plan de pruebas, configuración del entorno para realizarlo y proceso de pruebas.",
+                ru: "Написание документации о тест-плане, настройке среды тестирования.",
+              },
+            },
+            {
+              id: 5,
+              description: {
+                en: "Collaborated with quality team members, client-side developers, server-side developers and leaders to monitor conformance to quality standards.",
+                es: "Colaboración con desarrolladores de backend, de frontend, móviles, directores del proyecto y clientes para conseguir la calidad de producto requerida.",
+                ru: "Взаимодействие между разработчиками серверной, клиентской частей ПО, тестировщиками и руководителями проекта для достижения требуемого уровня качества продукта",
+              },
+            },
+            {
+              id: 6,
+              description: {
+                en: "Worked with Agile and Scrum methodologies to accomplish project milestones and meet demanding timelines.",
+                es: "Utilización de la metodología Agile (Scrum) para alcanzar los hitos del proyecto y cumplir con los plazos de entrega.",
+                ru: "Взаимодействие с командой по методикам Agile (Scrum) для достижения поставленных целей в заданные сроки.",
+              },
+            },
+          ],
+        },
+      },
+      {
+        id: 2,
+        category: "Frontend",
+        icon: FrontendIcon,
+        companyName: "ProcessMap",
+        companyLocation: {
+          en: "Miami, USA",
+          es: "Miami, EE.UU.",
+          ru: "Майами, США",
+        },
+        jobType: {
+          en: "remote",
+          es: "remoto",
+          ru: "удаленно",
+        },
+        position: {
+          en: "Frontend developer",
+          es: "Desarrollador de frontend",
+          ru: "Frontend разработчик",
+        },
+        periodFrom: {
+          en: "June 2020",
+          es: "Junio 2020",
+          ru: "Июль 2020",
+        }, 
+        periodTo: {
+          en: "May 2021",
+          es: "Mayo 2021",
+          ru: "Май 2021",
+        },
+        responsibilitiesData: {
+          responsibilitiesTitle: {
+            en: "Responsibilities",
+            es: "Responsabilidades",
+            ru: "Обязанности",
+          },
+          responsibilitiesInfo: [
+            {
+              id: 1,
+              description: {
+                en: "Implemented new features for Web-client of product.",
+                es: "Implementado nuevas características para cliente Web de producto.",
+                ru: "Реализация новых возможностей для Web-клиента приложения.",
+              },
+            },
+            {
+              id: 2,
+              description: {
+                en: "Fixed Web-client errors.",
+                es: "Corregidos errores de cliente Web.",
+                ru: "Исправление ошибок на Web-клиенте.",
+              },
+            },
+            {
+              id: 3,
+              description: {
+                en: "Drafted documentation of completed tasks.",
+                es: "Escritura de la documentación sobre tareas completadas.",
+                ru: "Написание документации о завершенных задачах.",
+              },
+            },
+          ],
+        }, 
       },
     ],
   },

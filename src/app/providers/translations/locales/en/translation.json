@@ -20,6 +20,9 @@
     "skills": {
       "sectionTitle": "Skills"
     },
+    "experience": {
+      "sectionTitle": "Experience"
+    },
     "projects": {
       "sectionTitle": "Projects",
       "categoryAll": "All",

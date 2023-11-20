@@ -7,7 +7,7 @@ import {
   HomeIcon,
   AboutIcon,
   SkillsIcon,
-  // ExperienceIcon,
+  ExperienceIcon,
   ProjectsIcon,
   ContactIcon,
   MenuClosedIcon,
@@ -89,7 +89,7 @@ const Sidebar = () => {
               </LinkScroll>
             </li>
 
-            {/* <li className={styles['nav-item']}>
+            <li className={styles['nav-item']}>
               <LinkScroll
                 to="experience"
                 className={styles['nav-link']}
@@ -97,7 +97,7 @@ const Sidebar = () => {
               >
                 <ExperienceIcon />
               </LinkScroll>
-            </li> */}
+            </li>
 
             <li className={styles['nav-item']}>
               <LinkScroll

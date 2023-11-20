@@ -20,6 +20,9 @@
     "skills": {
       "sectionTitle": "Habilidades"
     },
+    "experience": {
+      "sectionTitle": "Experiencia Laboral"
+    },
     "projects": {
       "sectionTitle": "Proyectos",
       "categoryAll": "Todos",
