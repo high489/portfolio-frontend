@@ -4,7 +4,6 @@
   top: 0;
   background: var(--container-color);
   box-shadow: var(--shadow);
-  //border-right: 1px solid hsla(204, 23%, 41%, 0.3);
   padding: 2.5rem;
   width: 110px;
   height: 100vh;
@@ -16,6 +15,10 @@
   justify-content: space-between;
   z-index: 10;
   transition: .3s;
+}
+
+.nav-item {
+  cursor: pointer;
 }
 
 .nav-list {
