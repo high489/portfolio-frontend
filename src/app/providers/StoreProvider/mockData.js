@@ -160,8 +160,8 @@ export const mockData = {
         }, 
         periodTo: {
           en: "June 2020",
-          es: "Junio 2016",
-          ru: "Июль 2016",
+          es: "Junio 2020",
+          ru: "Июль 2020",
         },
         responsibilitiesData: {
           responsibilitiesTitle: {
