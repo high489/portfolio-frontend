@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-frontend/static/css/main.a60e7a14.css",
-    "main.js": "/portfolio-frontend/static/js/main.53be89a4.js",
+    "main.js": "/portfolio-frontend/static/js/main.69bfa39d.js",
     "static/js/787.c78a8ab9.chunk.js": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js",
     "static/media/pet-countries.svg": "/portfolio-frontend/static/media/pet-countries.078517eada787d9dce5fea4f01de4c91.svg",
     "static/media/me.svg": "/portfolio-frontend/static/media/me.3f8a487620d4905043706358834d1c94.svg",
@@ -48,11 +48,11 @@
     "static/media/html-icon.svg": "/portfolio-frontend/static/media/html-icon.d07fa89482ea367181a78823fddd7db9.svg",
     "static/media/arrow-down-icon.svg": "/portfolio-frontend/static/media/arrow-down-icon.ffb77316bdb618116db649b87be301ea.svg",
     "main.a60e7a14.css.map": "/portfolio-frontend/static/css/main.a60e7a14.css.map",
-    "main.53be89a4.js.map": "/portfolio-frontend/static/js/main.53be89a4.js.map",
+    "main.69bfa39d.js.map": "/portfolio-frontend/static/js/main.69bfa39d.js.map",
     "787.c78a8ab9.chunk.js.map": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a60e7a14.css",
-    "static/js/main.53be89a4.js"
+    "static/js/main.69bfa39d.js"
   ]
 }
