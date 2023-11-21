@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-frontend/static/css/main.fc6b48ab.css",
-    "main.js": "/portfolio-frontend/static/js/main.3468abcc.js",
+    "main.css": "/portfolio-frontend/static/css/main.a60e7a14.css",
+    "main.js": "/portfolio-frontend/static/js/main.53be89a4.js",
     "static/js/787.c78a8ab9.chunk.js": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js",
     "static/media/pet-countries.svg": "/portfolio-frontend/static/media/pet-countries.078517eada787d9dce5fea4f01de4c91.svg",
     "static/media/me.svg": "/portfolio-frontend/static/media/me.3f8a487620d4905043706358834d1c94.svg",
@@ -42,14 +42,17 @@
     "static/media/ru.svg": "/portfolio-frontend/static/media/ru.365e2a0862a1881e104aba5eb55b174a.svg",
     "index.html": "/portfolio-frontend/index.html",
     "static/media/link-icon.svg": "/portfolio-frontend/static/media/link-icon.cbfa9e44d765eac798db52008e871008.svg",
+    "static/media/qa-icon.svg": "/portfolio-frontend/static/media/qa-icon.5afe0ce01d4f181f16ad42bd13a71319.svg",
+    "static/media/frontend-icon.svg": "/portfolio-frontend/static/media/frontend-icon.682cd1315203fa3cf6f2c7711e9fa1bf.svg",
     "static/media/css-icon.svg": "/portfolio-frontend/static/media/css-icon.261c5f4ffa3f036603858547fc222be6.svg",
     "static/media/html-icon.svg": "/portfolio-frontend/static/media/html-icon.d07fa89482ea367181a78823fddd7db9.svg",
-    "main.fc6b48ab.css.map": "/portfolio-frontend/static/css/main.fc6b48ab.css.map",
-    "main.3468abcc.js.map": "/portfolio-frontend/static/js/main.3468abcc.js.map",
+    "static/media/arrow-down-icon.svg": "/portfolio-frontend/static/media/arrow-down-icon.ffb77316bdb618116db649b87be301ea.svg",
+    "main.a60e7a14.css.map": "/portfolio-frontend/static/css/main.a60e7a14.css.map",
+    "main.53be89a4.js.map": "/portfolio-frontend/static/js/main.53be89a4.js.map",
     "787.c78a8ab9.chunk.js.map": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc6b48ab.css",
-    "static/js/main.3468abcc.js"
+    "static/css/main.a60e7a14.css",
+    "static/js/main.53be89a4.js"
   ]
 }
