@@ -1,27 +1,23 @@
 import styles from './socials.module.scss';
 
-import { LinkedInIcon, GitHubIcon } from './assets';
+const Socials = ({ socialsData }) => {
 
-const Socials = () => {
   return (
     <div className={styles.socials}>
-      <a 
-        href="https://www.linkedin.com/in/vitalii-matskaniuk/" 
-        target='_blank' 
-        rel="noreferrer" 
-        className={styles['social-link']}
-      >
-        <LinkedInIcon />
-      </a>
-
-      <a 
-        href="https://github.com/high489" 
-        target='_blank' 
-        rel="noreferrer" 
-        className={styles['social-link']}
-      >
-        <GitHubIcon />
-      </a>
+      {socialsData.map(({ id, link, icon }) => {
+        let SocialNetworkIcon = icon
+        return (
+          <a
+            key={id}
+            href={link}
+            target='_blank'
+            rel='noreferrer'
+            className={styles['social-link']}
+          >
+            <SocialNetworkIcon />
+          </a>
+        )
+      })}
     </div>
   )
 }

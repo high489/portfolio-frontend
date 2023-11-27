@@ -11,8 +11,9 @@ import {
   WebpackIcon,
   GitIcon,
 } from 'app/assets/skills';
-import { QAIcon, FrontendIcon } from 'app/assets';
+import { QAIcon, FrontendIcon } from 'app/assets/experience';
 import { FuturePet1Image, FuturePet2Image, PetCoutriesImage } from 'app/assets/projects';
+import { LinkedInIcon, HhIcon, GitHubIcon } from 'app/assets/socials';
 
 export const mockData = {
   technicalSkillsData: {
@@ -345,4 +346,21 @@ export const mockData = {
       },
     },
   },
+  socialsData: [
+    {
+      id: 1,
+      link: "https://www.linkedin.com/in/vitalii-matskaniuk/",
+      icon: LinkedInIcon,
+    },
+    {
+      id: 2,
+      link: "https://hh.ru/resume/3e931a00ff0c9fe43e0039ed1f5832776e7432",
+      icon: HhIcon,
+    },
+    {
+      id: 3,
+      link: "https://github.com/high489",
+      icon: GitHubIcon,
+    },
+  ],
 }

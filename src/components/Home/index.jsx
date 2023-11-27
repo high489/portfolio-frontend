@@ -1,5 +1,6 @@
 import styles from './home.module.scss';
 import { useTranslation } from 'react-i18next';
+import { useStore } from 'app/providers/StoreProvider';
 import { Link as LinkScroll } from 'react-scroll';
 
 import { Developer } from './assets';
@@ -7,6 +8,7 @@ import { Socials, ScrollDown, Forest } from 'ui';
 
 const Home = () => {
   const { t } = useTranslation()
+  const { socialsData } = useStore()
 
   return (
     <>
@@ -30,7 +32,7 @@ const Home = () => {
             />
           </a>
              
-          <Socials />
+          <Socials socialsData={socialsData}/>
 
           <LinkScroll to="contact" className={`btn ${styles['home-contact-btn']}`}>{ t('portfolio.home.contactBtnText') }</LinkScroll>
 

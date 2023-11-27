@@ -47,7 +47,9 @@ const JobCard = ({
           className={styles['responsibilities-title-wrapper']}
           onClick={() => showResponsibilities(!toggle)}
         >
-          <div className={styles['responsibilities-title']}>{responsibilitiesTitle[language]}</div>
+          <div className={styles['responsibilities-title']}>
+            {`${responsibilitiesTitle[language]}${window.innerWidth > 1024 ? ':' : ''}`}
+          </div>
           <ArrowDown className={`${styles['responsibilities-arrow']} ${toggle ? styles['arrow-up'] : ''}`} />
         </div>
         
