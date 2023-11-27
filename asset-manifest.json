@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-frontend/static/css/main.a60e7a14.css",
-    "main.js": "/portfolio-frontend/static/js/main.69bfa39d.js",
+    "main.js": "/portfolio-frontend/static/js/main.7ca9637c.js",
     "static/js/787.c78a8ab9.chunk.js": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js",
     "static/media/pet-countries.svg": "/portfolio-frontend/static/media/pet-countries.078517eada787d9dce5fea4f01de4c91.svg",
     "static/media/me.svg": "/portfolio-frontend/static/media/me.3f8a487620d4905043706358834d1c94.svg",
@@ -46,13 +46,14 @@
     "static/media/frontend-icon.svg": "/portfolio-frontend/static/media/frontend-icon.682cd1315203fa3cf6f2c7711e9fa1bf.svg",
     "static/media/css-icon.svg": "/portfolio-frontend/static/media/css-icon.261c5f4ffa3f036603858547fc222be6.svg",
     "static/media/html-icon.svg": "/portfolio-frontend/static/media/html-icon.d07fa89482ea367181a78823fddd7db9.svg",
+    "static/media/hh-icon.svg": "/portfolio-frontend/static/media/hh-icon.625a7c6a546a725d005fcc10f0afc799.svg",
     "static/media/arrow-down-icon.svg": "/portfolio-frontend/static/media/arrow-down-icon.ffb77316bdb618116db649b87be301ea.svg",
     "main.a60e7a14.css.map": "/portfolio-frontend/static/css/main.a60e7a14.css.map",
-    "main.69bfa39d.js.map": "/portfolio-frontend/static/js/main.69bfa39d.js.map",
+    "main.7ca9637c.js.map": "/portfolio-frontend/static/js/main.7ca9637c.js.map",
     "787.c78a8ab9.chunk.js.map": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a60e7a14.css",
-    "static/js/main.69bfa39d.js"
+    "static/js/main.7ca9637c.js"
   ]
 }
