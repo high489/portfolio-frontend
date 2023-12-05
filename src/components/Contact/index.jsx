@@ -6,9 +6,30 @@ import { validateContactForm } from 'app/utils';
 
 const Contact = () => {
   const { t } = useTranslation()
+  const [ formData, setFormData ] = useState({
+    user_name: '',
+    user_email: '',
+    subject: '',
+    message: '',
+  })
   const [ errors, setErrors ] = useState({})
-  
   const formRef = useRef()
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target
+    setFormData({
+      ...formData,
+      [name]: value,
+    })
+  }
+
+  const handleInputFocus = (e) => {
+    const { name } = e.target
+    setErrors({
+      ...errors,
+      [name]: undefined,
+    })
+  }
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -31,7 +52,12 @@ const Contact = () => {
 
     emailjs.sendForm('service_fsxhlpa', 'template_ejiz8u5', formRef.current, 'SJO4SToV9TW9HL44f')
       .then((result) => {
-        e.target.reset()
+        setFormData({
+          user_name: '',
+          user_email: '',
+          subject: '',
+          message: '',
+        })
         console.log(result.text)
       }, (error) => {
         console.log(error.text)
@@ -58,6 +84,8 @@ const Contact = () => {
           ref={formRef}
           className={styles['contact-form']}
           onSubmit={sendEmail}
+          noValidate
+          autoComplete='off'
         >
 
           <div className={styles['contact-form-group']}>
@@ -65,16 +93,22 @@ const Contact = () => {
             <div className={styles['contact-form-div']}>
               <input 
                 name='user_name'
-                type="text" 
-                className={`${styles['contact-form-input']} ${errors.nameError ? styles.invalid : ''}`}
+                type="text"
+                value={formData.user_name}
+                onChange={handleInputChange}
+                onFocus={handleInputFocus}
+                className={`${styles['contact-form-input']} ${errors.user_name ? styles.invalid : ''}`}
                 placeholder={ t('portfolio.contact.contactFormNamePh') } />
             </div>
 
             <div className={styles['contact-form-div']}>
               <input
                 name='user_email'
-                type="email" 
-                className={`${styles['contact-form-input']} ${errors.emailError ? styles.invalid : ''}`}
+                type="email"
+                value={formData.user_email}
+                onChange={handleInputChange}
+                onFocus={handleInputFocus}
+                className={`${styles['contact-form-input']} ${errors.user_email ? styles.invalid : ''}`}
                 placeholder={ t('portfolio.contact.contactFormEmailPh') } />
             </div>
 
@@ -83,8 +117,11 @@ const Contact = () => {
           <div className={styles['contact-form-div']}>
             <input
               name='subject'
-              type="text" 
-              className={`${styles['contact-form-input']} ${errors.subjectError ? styles.invalid : ''}`}
+              type="text"
+              value={formData.subject}
+              onChange={handleInputChange}
+              onFocus={handleInputFocus}
+              className={`${styles['contact-form-input']} ${errors.subject ? styles.invalid : ''}`}
               placeholder={ t('portfolio.contact.contactFormSubjectPh') }
             />
           </div>
@@ -92,7 +129,10 @@ const Contact = () => {
           <div className={`${styles['contact-form-div']} ${styles['contact-form-area']}`}>
             <textarea 
               name='message' id='' cols='30' rows='10'
-              className={`${styles['contact-form-input']} ${errors.messageError ? styles.invalid : ''}`}
+              value={formData.message}
+              onChange={handleInputChange}
+              onFocus={handleInputFocus}
+              className={`${styles['contact-form-input']} ${errors.message ? styles.invalid : ''}`}
               placeholder={ t('portfolio.contact.contactFormMessagePh') }
             ></textarea>
           </div>
