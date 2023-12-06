@@ -62,7 +62,7 @@ const Sidebar = () => {
               <LinkScroll
                 to="home"
                 className={styles['nav-link']}
-                offset={-150}
+                offset={-250}
                 onClick={() => showMenu(false)}
               >
                 <HomeIcon />

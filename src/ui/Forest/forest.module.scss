@@ -1,5 +1,5 @@
 .forest {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   height: 100%;
@@ -86,7 +86,23 @@
 }
 
 @media screen and (max-width: 576px) {
-  .sun, .house, .t1, .t2, .t3, .t4, .t5 {
+  .t2, .t4, .t5 {
     display: none;
+  }
+  .sun {
+    top: 5%;
+    right: 15%;
+  }
+  .house {
+    bottom: 16%;
+    left: 22%;
+  }
+  .t1 {
+    top: 48%;
+    left: 5%;
+  }
+  .t3 {
+    top: 60%;
+    right: 3%;
   }
 }

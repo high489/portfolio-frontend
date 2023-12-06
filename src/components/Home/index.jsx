@@ -4,7 +4,7 @@ import { useStore } from 'app/providers/StoreProvider';
 import { Link as LinkScroll } from 'react-scroll';
 
 import { Developer } from './assets';
-import { Socials, ScrollDown, Forest } from 'ui';
+import { Socials, ScrollDown, ParallaxScroll, Forest } from 'ui';
 
 const Home = () => {
   const { t } = useTranslation()
@@ -38,10 +38,16 @@ const Home = () => {
 
           <ScrollDown text={ t('ui.scrollElementText') }/>
         </div>
-        
-        
       </section>
-      <Forest />
+      <ParallaxScroll style={{
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        height: '100%',
+        width: '100%'
+      }}>
+        <Forest />
+      </ParallaxScroll>
     </>
   )
 }
