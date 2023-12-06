@@ -1,7 +1,7 @@
 const validateContactForm = (formData) => {
   const errors = {};
 
-  const nameRegex = /^[a-zA-Z0-9 '-]+$/;
+  const nameRegex = /^[\p{L}0-9 '-]+$/u;
   if (!formData.user_name.match(nameRegex) || formData.user_name.trim() === '') {
     errors.user_name = true;
   }
