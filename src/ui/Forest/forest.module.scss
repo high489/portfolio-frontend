@@ -4,6 +4,7 @@
   top: 0;
   height: 100%;
   width: 100%;
+  z-index: -10;
 }
 
 .forest-element {
@@ -97,12 +98,12 @@
   .house {
     width: 30px;
     bottom: 15%;
-    left: 17%;
+    left: 15%;
   }
   .t1 {
     width: 36px;
     top: 48%;
-    left: 7%;
+    left: 5%;
   }
   .t3 {
     width: 44px;
