@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 
-const ParallaxScroll = ({ children, style }) => {
+const ParallaxScroll = ({ children, style, speed = 0.1 }) => {
   const [{ offset }, set] = useSpring(() => ({ offset: 0 }))
 
   const handleScroll = () => {
@@ -20,7 +20,8 @@ const ParallaxScroll = ({ children, style }) => {
     <animated.div
       style={{
         ...style,
-        transform: offset.to((o) => `translateY(${o * -0.5}px)`),
+        // transform: offset.to((o) => `translateY(${o / 0.01}px)`),
+        transform: offset.to((o) => `translateY(${o * -speed}px)`),
       }}
     >
       {children}

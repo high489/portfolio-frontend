@@ -39,13 +39,16 @@ const Home = () => {
           <ScrollDown text={ t('ui.scrollElementText') }/>
         </div>
       </section>
-      <ParallaxScroll style={{
-        position: 'absolute',
-        left: 0,
-        top: 0,
-        height: '100%',
-        width: '100%'
-      }}>
+      <ParallaxScroll 
+        style={{
+          position: 'absolute',
+          left: 0,
+          top: 0,
+          height: '100%',
+          width: '100%'
+        }}
+        speed={0.5}
+      >
         <Forest />
       </ParallaxScroll>
     </>

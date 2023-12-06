@@ -27,7 +27,7 @@
 
 .sun {
   width: 72px;
-  height: 72px;
+  height: auto;
   top: 5%;
   right: 30%;
   animation: sun-shining 2s linear infinite;
@@ -38,28 +38,28 @@
 
 .house {
   width: 40px;
-  height: 40px;
+  height: auto;
   bottom: 34%;
   left: 29%;
 }
 
 .t1 {
   width: 48px;
-  height: 48px;
+  height: auto;
   top: 14%;
   left: 34%;
 }
 
 .t2 {
   width: 60px;
-  height: 60px;
+  height: auto;
   bottom: 21%;
   right: 16%;
 }
 
 .t3 {
   width: 56px;
-  height: 56px;
+  height: auto;
   top: 35%;
   right: 10%;
 }
@@ -73,7 +73,7 @@
 
 .t5 {
   width: 55px;
-  height: 55px;
+  height: auto;
   bottom: 14%;
   left: 33%;
 }
@@ -90,19 +90,23 @@
     display: none;
   }
   .sun {
+    width: 60px;
     top: 5%;
     right: 15%;
   }
   .house {
-    bottom: 16%;
-    left: 22%;
+    width: 30px;
+    bottom: 15%;
+    left: 17%;
   }
   .t1 {
+    width: 36px;
     top: 48%;
-    left: 5%;
+    left: 7%;
   }
   .t3 {
+    width: 44px;
     top: 60%;
-    right: 3%;
+    right: 5%;
   }
 }
