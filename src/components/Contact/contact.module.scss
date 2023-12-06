@@ -59,6 +59,20 @@
   opacity: .7;
 }
 
+.input-hint {
+  position: absolute;
+  color: var(--text-color);
+  background-color: hsla(48, 86%, 84%, .5);;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  border-radius: 0.1rem 0.75rem 0.75rem 0.75rem;
+  padding: 0.1rem 0.5rem;
+  font-size: var(--smaller-font-size);
+  bottom: -0.85rem;
+  left: 2.125rem;
+  z-index: 5;
+}
+
 .invalid {
   background-color: hsla(8, 91%, 65%, .2);
 }

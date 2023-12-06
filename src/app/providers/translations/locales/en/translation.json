@@ -36,7 +36,12 @@
       "contactFormEmailPh": "Your email",
       "contactFormSubjectPh": "Subject",
       "contactFormMessagePh": "Message",
-      "contactFormSubmit": "Send Message"
+      "contactFormSubmit": "Send Message",
+      "FormRequiredHint": "Required Field",
+      "FormNameHint": "Any letters, numbers, «-» or «'»",
+      "FormEmailHint": "Example: «john.smith@mail.com»",
+      "FormSubjectHint": "Maximum of 150 characters",
+      "FormMessageHint": "Maximum of 500 characters"
     }
   },
   "ui": {

@@ -98,7 +98,17 @@ const Contact = () => {
                 onChange={handleInputChange}
                 onFocus={handleInputFocus}
                 className={`${styles['contact-form-input']} ${errors.user_name ? styles.invalid : ''}`}
-                placeholder={ t('portfolio.contact.contactFormNamePh') } />
+                placeholder={ t('portfolio.contact.contactFormNamePh') }
+              />
+
+              <span
+                className={styles['input-hint']}
+                style={{display: errors.user_name ? 'block' : 'none'}}
+              >
+                {formData.user_name.length === 0
+                ? t('portfolio.contact.FormRequiredHint')
+                : t('portfolio.contact.FormNameHint')}
+              </span>
             </div>
 
             <div className={styles['contact-form-div']}>
@@ -109,7 +119,17 @@ const Contact = () => {
                 onChange={handleInputChange}
                 onFocus={handleInputFocus}
                 className={`${styles['contact-form-input']} ${errors.user_email ? styles.invalid : ''}`}
-                placeholder={ t('portfolio.contact.contactFormEmailPh') } />
+                placeholder={ t('portfolio.contact.contactFormEmailPh') }
+              />
+
+              <span
+                className={styles['input-hint']}
+                style={{display: errors.user_email ? 'block' : 'none'}}
+              >
+                {formData.user_email.length === 0
+                ? t('portfolio.contact.FormRequiredHint')
+                : t('portfolio.contact.FormEmailHint')}
+              </span>
             </div>
 
           </div>
@@ -124,6 +144,14 @@ const Contact = () => {
               className={`${styles['contact-form-input']} ${errors.subject ? styles.invalid : ''}`}
               placeholder={ t('portfolio.contact.contactFormSubjectPh') }
             />
+            <span
+              className={styles['input-hint']}
+              style={{display: errors.subject ? 'block' : 'none'}}
+            >
+              {formData.subject.length === 0
+                ? t('portfolio.contact.FormRequiredHint')
+                : t('portfolio.contact.FormSubjectHint')}
+            </span>
           </div>
 
           <div className={`${styles['contact-form-div']} ${styles['contact-form-area']}`}>
@@ -133,8 +161,17 @@ const Contact = () => {
               onChange={handleInputChange}
               onFocus={handleInputFocus}
               className={`${styles['contact-form-input']} ${errors.message ? styles.invalid : ''}`}
+              style={{ paddingTop: '1.25rem' }}
               placeholder={ t('portfolio.contact.contactFormMessagePh') }
             ></textarea>
+            <span
+              className={styles['input-hint']}
+              style={{display: errors.message ? 'block' : 'none'}}
+            >
+              {formData.message.length === 0
+                ? t('portfolio.contact.FormRequiredHint')
+                : t('portfolio.contact.FormMessageHint')}
+            </span>
           </div>
 
           <input

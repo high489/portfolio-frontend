@@ -36,7 +36,12 @@
       "contactFormEmailPh": "Вашa электронная почта",
       "contactFormSubjectPh": "Тема",
       "contactFormMessagePh": "Сообщение",
-      "contactFormSubmit": "Отправить сообщение"
+      "contactFormSubmit": "Отправить сообщение",
+      "FormRequiredHint": "Обязательное поле",
+      "FormNameHint": "Любые буквы, цифры, «-» или «'»",
+      "FormEmailHint": "Пример: «ivan.ivanov@mail.com»",
+      "FormSubjectHint": "Максимум 150 символов",
+      "FormMessageHint": "Максимум 500 символов"
     }
   },
   "ui": {
