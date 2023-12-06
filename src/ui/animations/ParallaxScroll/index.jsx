@@ -2,17 +2,18 @@ import { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 
 const ParallaxScroll = ({ children, style }) => {
-  const [{ offset }, set] = useSpring(() => ({ offset: 0 }));
+  const [{ offset }, set] = useSpring(() => ({ offset: 0 }))
 
   const handleScroll = () => {
     set({ offset: window.scrollY })
-  };
-
+  }
+  
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll)
     }
+    // eslint-disable-next-line
   }, [])
 
   return (
