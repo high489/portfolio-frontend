@@ -162,7 +162,7 @@ export const mockData = {
         periodTo: {
           en: "June 2020",
           es: "Junio 2020",
-          ru: "Июль 2020",
+          ru: "Июнь 2020",
         },
         responsibilitiesData: {
           responsibilitiesTitle: {
@@ -239,13 +239,13 @@ export const mockData = {
         },
         position: {
           en: "Frontend developer",
-          es: "Desarrollador de frontend",
+          es: "Desarrollador de Frontend",
           ru: "Frontend разработчик",
         },
         periodFrom: {
           en: "June 2020",
           es: "Junio 2020",
-          ru: "Июль 2020",
+          ru: "Июнь 2020",
         }, 
         periodTo: {
           en: "May 2021",
