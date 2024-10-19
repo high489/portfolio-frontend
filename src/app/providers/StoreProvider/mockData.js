@@ -12,7 +12,7 @@ import {
   GitIcon,
 } from 'app/assets/skills';
 import { QAIcon, FrontendIcon } from 'app/assets/experience';
-import { FuturePet1Image, FuturePet2Image, PetCoutriesImage } from 'app/assets/projects';
+import { FuturePetImage, PetOnlineSchoolImage, PetCoutriesImage } from 'app/assets/projects';
 import { LinkedInIcon, HhIcon, GitHubIcon } from 'app/assets/socials';
 
 export const mockData = {
@@ -299,7 +299,7 @@ export const mockData = {
           ru: "Страны и Флаги",
         },
         stack: {
-          framework: "React",
+          framework: "React-JavaScript",
           stateManager: "Redux Toolkit",
           styles: "styled-components",
         },
@@ -308,18 +308,23 @@ export const mockData = {
       },
       {
         id: 2,
-        image: FuturePet1Image,
+        image: PetOnlineSchoolImage,
         title: {
-          en: "The Future Project",
-          es: "El Proyecto Futuro",
-          ru: "Будущий Проект",
+          en: "Scheduler of Online School",
+          es: "Horario\nde la Escuela en Línea",
+          ru: "Расписание\nОнлайн Школы",
         },
-        link: "#projects",
-        category: "Future",
+        stack: {
+          framework: "React-TypeScript",
+          stateManager: "RTK Query",
+          styles: "SASS/SCSS",
+        },
+        link: "https://high489.github.io/sirius-future-test-task/",
+        category: "React",
       },
       {
         id: 3,
-        image: FuturePet2Image,
+        image: FuturePetImage,
         title: {
           en: "The Future Project",
           es: "El Proyecto Futuro",
