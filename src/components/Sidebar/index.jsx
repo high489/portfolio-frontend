@@ -123,7 +123,7 @@ const Sidebar = () => {
         </nav>
 
         <div className={styles['nav-footer']}>
-          <span className={styles.copyright}>2023 - 2024</span>
+          <span className={styles.copyright}>2023 - {new Date().getFullYear()}</span>
         </div>
 
       </aside>

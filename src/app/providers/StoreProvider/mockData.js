@@ -12,7 +12,12 @@ import {
   GitIcon,
 } from 'app/assets/skills';
 import { QAIcon, FrontendIcon } from 'app/assets/experience';
-import { FuturePetImage, PetOnlineSchoolImage, PetCoutriesImage } from 'app/assets/projects';
+import { 
+  FuturePetImage,
+  PetOnlineSchoolImage,
+  PetCoutriesImage,
+  PetTodoAppImage,
+} from 'app/assets/projects';
 import { LinkedInIcon, HhIcon, GitHubIcon } from 'app/assets/socials';
 
 export const mockData = {
@@ -324,6 +329,23 @@ export const mockData = {
       },
       {
         id: 3,
+        image: PetTodoAppImage,
+        title: {
+          en: "To-Do App",
+          es: "Aplicación de To-Do",
+          ru: "Приложение To-Do",
+        },
+        stack: {
+          framework: "React-TypeScript",
+          stateManager: "Zustand",
+          styles: "SASS/SCSS",
+          tests: "Jest",
+        },
+        link: "https://high489.github.io/classic-todo-app/",
+        category: "React",
+      },
+      {
+        id: 4,
         image: FuturePetImage,
         title: {
           en: "The Future Project",
