@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-frontend/static/css/main.68d5cab9.css",
-    "main.js": "/portfolio-frontend/static/js/main.70730c3f.js",
+    "main.js": "/portfolio-frontend/static/js/main.78337db5.js",
     "static/js/787.c78a8ab9.chunk.js": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js",
     "static/media/pet-countries.svg": "/portfolio-frontend/static/media/pet-countries.078517eada787d9dce5fea4f01de4c91.svg",
     "static/media/me.svg": "/portfolio-frontend/static/media/me.3f8a487620d4905043706358834d1c94.svg",
@@ -10,6 +10,7 @@
     "static/media/sun.svg": "/portfolio-frontend/static/media/sun.be0366e342e49049217a5ecd7b7f7376.svg",
     "static/media/styled-components-icon.svg": "/portfolio-frontend/static/media/styled-components-icon.73e01a18b4c37e7a6edee42440f4dea2.svg",
     "static/media/es.svg": "/portfolio-frontend/static/media/es.310e532784eaa6f4874d928921414a3a.svg",
+    "static/media/pet-todo-app.svg": "/portfolio-frontend/static/media/pet-todo-app.3c201cc568f46da752e8f84408cce761.svg",
     "static/media/pet-online-school.svg": "/portfolio-frontend/static/media/pet-online-school.7f5f64158321928f0da97325ad99f7fe.svg",
     "static/media/board-games-fan.svg": "/portfolio-frontend/static/media/board-games-fan.200763442eb8855bddb30482686d9fe9.svg",
     "static/media/react-icon.svg": "/portfolio-frontend/static/media/react-icon.1bd0b0aa7ca85b52e58da37d668a0127.svg",
@@ -49,11 +50,11 @@
     "static/media/hh-icon.svg": "/portfolio-frontend/static/media/hh-icon.625a7c6a546a725d005fcc10f0afc799.svg",
     "static/media/arrow-down-icon.svg": "/portfolio-frontend/static/media/arrow-down-icon.ffb77316bdb618116db649b87be301ea.svg",
     "main.68d5cab9.css.map": "/portfolio-frontend/static/css/main.68d5cab9.css.map",
-    "main.70730c3f.js.map": "/portfolio-frontend/static/js/main.70730c3f.js.map",
+    "main.78337db5.js.map": "/portfolio-frontend/static/js/main.78337db5.js.map",
     "787.c78a8ab9.chunk.js.map": "/portfolio-frontend/static/js/787.c78a8ab9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68d5cab9.css",
-    "static/js/main.70730c3f.js"
+    "static/js/main.78337db5.js"
   ]
 }
