@@ -17,6 +17,7 @@ import {
   PetOnlineSchoolImage,
   PetCoutriesImage,
   PetTodoAppImage,
+  PetWetherAppImage,
 } from 'app/assets/projects';
 import { LinkedInIcon, HhIcon, GitHubIcon } from 'app/assets/socials';
 
@@ -346,6 +347,23 @@ export const mockData = {
       },
       {
         id: 4,
+        image: PetWetherAppImage,
+        title: {
+          en: "Weather App",
+          es: "Aplicación de Clima",
+          ru: "Приложение погоды",
+        },
+        stack: {
+          framework: "Next.js-TypeScript",
+          stateManager: "Zustand",
+          styles: "SASS/SCSS",
+          components: "Bootstrap",
+        },
+        link: "https://test-work26.vercel.app/",
+        category: "Next.js",
+      },
+      {
+        id: 5,
         image: FuturePetImage,
         title: {
           en: "The Future Project",
@@ -362,6 +380,13 @@ export const mockData = {
           en: "React",
           es: "React",
           ru: "React",
+        }
+      },
+      "Next.js": {
+        translations: {
+          en: "Next.js",
+          es: "Next.js",
+          ru: "Next.js",
         }
       },
       "Future": {
