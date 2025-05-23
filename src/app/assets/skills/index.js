@@ -9,3 +9,7 @@ export { ReactComponent as ReactRouterIcon } from './react-router-icon.svg';
 export { ReactComponent as StyledIcon } from './styled-components-icon.svg';
 export { ReactComponent as WebpackIcon } from './webpack-icon.svg';
 export { ReactComponent as GitIcon } from './git-icon.svg';
+export { ReactComponent as NextJsIcon } from './next-js-icon.svg';
+export { ReactComponent as ZustandIcon } from './zustand-icon.svg';
+export { ReactComponent as JestIcon } from './jest-icon.svg';
+export { ReactComponent as TestingLibraryIcon } from './testing-library-icon.svg';

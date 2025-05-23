@@ -36,6 +36,7 @@ const Experience = () => {
                 jobType={job.jobType}
                 periodFrom={job.periodFrom}
                 periodTo={job.periodTo}
+                jobDescription={job.jobDescription}
                 responsibilitiesTitle={job.responsibilitiesData.responsibilitiesTitle}
                 responsibilities={job.responsibilitiesData.responsibilitiesInfo}
               />

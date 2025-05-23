@@ -7,9 +7,9 @@
     },
     "about": {
       "sectionTitle": "About Me",
-      "infoP1": "My name is Vitalii Matskaniuk.",
-      "infoP2": "I decided to try my hand as a Frontend Developer after some years of working as a QA Engineer.",
-      "infoP3": "I’m interested in the process of creating web applications and user interfaces. My priority is to evolve and get experience. I aspire to do this job correctly and with good quality.",
+      "infoP1": "My name is Vitalii Matskaniuk",
+      "infoP2": "I'm a Frontend Developer with a background in both development and quality assurance. I work with React and a modern technology stack to build clean, user-friendly web applications, focusing on performance and usability",
+      "infoP3": "I'm always open to learning new things, growing as a developer, and building products that people enjoy using",
       "downloadResumeBtn": "Download Resume",
       "positionsTitle": "Positions",
       "position1": "Frontend Developer",

@@ -6,10 +6,13 @@ import {
   TypeScriptIcon,
   ReactIcon,
   ReduxIcon,
+  NextJsIcon,
   ReactRouterIcon,
   StyledIcon,
-  WebpackIcon,
   GitIcon,
+  ZustandIcon,
+  JestIcon,
+  TestingLibraryIcon,
 } from 'app/assets/skills';
 import { QAIcon, FrontendIcon } from 'app/assets/experience';
 import { 
@@ -38,27 +41,27 @@ export const mockData = {
       },
       {
         id: 3,
-        title: "Sass",
-        icon: SassIcon,
-        grade: 4,
-      },
-      {
-        id: 4,
         title: "JavaScript",
         icon: JavaScriptIcon,
         grade: 6,
       },
       {
-        id: 5,
+        id: 4,
         title: "TypeScript",
         icon: TypeScriptIcon,
         grade: 4,
       },
       {
-        id: 6,
+        id: 5,
         title: "React",
         icon: ReactIcon,
         grade: 5,
+      },
+      {
+        id: 6,
+        title: "Next.js",
+        icon: NextJsIcon,
+        grade: 3,
       },
       {
         id: 7,
@@ -68,27 +71,45 @@ export const mockData = {
       },
       {
         id: 8,
+        title: "Zustand",
+        icon: ZustandIcon,
+        grade: 5,
+      },
+      {
+        id: 9,
         title: "React Router",
         icon: ReactRouterIcon,
         grade: 5,
       },
       {
-        id: 9,
+        id: 10,
+        title: "Sass",
+        icon: SassIcon,
+        grade: 4,
+      },
+      {
+        id: 11,
         title: "styled components",
         icon: StyledIcon,
         grade: 4,
       },
       {
-        id: 10,
-        title: "Webpack",
-        icon: WebpackIcon,
-        grade: 6,
-      },
-      {
-        id: 11,
+        id: 12,
         title: "Git",
         icon: GitIcon,
         grade: 6,
+      },
+      {
+        id: 13,
+        title: "Jest",
+        icon: JestIcon,
+        grade: 4,
+      },
+      {
+        id: 14,
+        title: "React Testing Library",
+        icon: TestingLibraryIcon,
+        grade: 4,
       },
     ],
   },
@@ -122,7 +143,7 @@ export const mockData = {
           ru: "Английский",
         },
         levelName: "B1-B2",
-        levelPercentage: "70%",
+        levelPercentage: "60%",
         barColor: "#45AAB8",
       },
       {
@@ -132,8 +153,8 @@ export const mockData = {
           es: "Español",
           ru: "Испанский",
         },
-        levelName: "A1-A2",
-        levelPercentage: "30%",
+        levelName: "A2-B1",
+        levelPercentage: "40%",
         barColor: "#506C7F",
       },
     ],
@@ -157,18 +178,23 @@ export const mockData = {
         },
         position: {
           en: "QA Engineer",
-          es: "Ingeniero de Calidad (QA)",
+          es: "Ingeniero de QA",
           ru: "Тестировщик (QA)",
         },
         periodFrom: {
-          en: "April 2016",
-          es: "Abril 2016",
-          ru: "Апрель 2016",
+          en: "April 2018",
+          es: "Abril 2018",
+          ru: "Апрель 2018",
         }, 
         periodTo: {
-          en: "June 2020",
-          es: "Junio 2020",
-          ru: "Июнь 2020",
+          en: "October 2022",
+          es: "Octubre 2022",
+          ru: "Октябрь 2022",
+        },
+        jobDescription: {
+          en: "Tested new EHS platform features,\nensuring quality and compliance with requirements before releases",
+          es: "Probé nuevas funcionalidades de la plataforma EHS, garantizando la calidad y el cumplimiento de los requisitos antes de los lanzamientos a producción",
+          ru: "Проводил тестирование новой функциональности EHS-системы, гарантируя качество и соответствие требованиям перед релизами",
         },
         responsibilitiesData: {
           responsibilitiesTitle: {
@@ -180,49 +206,49 @@ export const mockData = {
             {
               id: 1,
               description: {
-                en: "Prepared the test plan: wrote and updated manual test cases for team use, maintaining optimal organization for maximum productivity.",
-                es: "Preparación del plan de pruebas: escritura y actualización de escenarios. Optimización de escenarios para aumentar la eficiencia del plan.",
-                ru: "Подготовка тест-плана: написание и обновление тестовых сценариев. Оптимизация сценариев для эффективности тест-плана.",
+                en: "Prepared the test plan: wrote and updated manual test cases for team use, maintaining optimal organization for maximum productivity",
+                es: "Diseñé el plan de pruebas, redacté y actualicé escenarios, y optimizé los casos de prueba para mejorar la eficiencia del plan",
+                ru: "Разрабатывал тест-планы: писал и обновлял тестовые сценарии. Занимался оптимизацией сценариев для большей эффективности тест-планов",
               },
             },
             {
               id: 2,
               description: {
-                en: "Prepared the simulated software production environment for testing.",
-                es: "Preparación del entorno de producción de software simulados para realizar las pruebas.",
-                ru: "Подготовка среды для проведения тестирования.",
+                en: "Prepared the simulated software production environment for testing",
+                es: "Configuré entornos de software simulados para la ejecución de pruebas",
+                ru: "Подготовка среды для проведения тестирования",
               },
             },
             {
               id: 3,
               description: {
-                en: "Conducted the test plan. Produced error reports with step-by-step guidance to reproduce them.",
-                es: "Realización del plan de pruebas. Elaboración de informes de errores con guía paso a paso para reproducirlos.",
-                ru: "Проведение тестирования согласно подготовленному тест-плану. Составление отчетов по выявленным ошибкам с пошаговым описанием для их воспроизведения.",
+                en: "Conducted the test plan. Produced error reports with step-by-step guidance to reproduce them",
+                es: "Ejecuté el plan de pruebas y documenté los errores mediante informes detallados con pasos reproducibles",
+                ru: "Проводил тестирование по тест-плану. Составлял пошаговое описание воспроизведения ошибок",
               },
             },
             {
               id: 4,
               description: {
-                en: "Drafted process documentation to standardize operating procedures and techniques of test plan.",
-                es: "Escritura de la documentación sobre el plan de pruebas, configuración del entorno para realizarlo y proceso de pruebas.",
-                ru: "Написание документации о тест-плане, настройке среды тестирования.",
+                en: "Drafted process documentation to standardize operating procedures and techniques of test plan",
+                es: "Escribí documentación sobre el plan de pruebas, la configuración del entorno y el proceso completo de validación",
+                ru: "Подготавоивал документацию о тест-плане и настройке среды тестирования",
               },
             },
             {
               id: 5,
               description: {
-                en: "Collaborated with quality team members, client-side developers, server-side developers and leaders to monitor conformance to quality standards.",
-                es: "Colaboración con desarrolladores de backend, de frontend, móviles, directores del proyecto y clientes para conseguir la calidad de producto requerida.",
-                ru: "Взаимодействие между разработчиками серверной, клиентской частей ПО, тестировщиками и руководителями проекта для достижения требуемого уровня качества продукта",
+                en: "Collaborated with quality team members, client-side developers, server-side developers and leaders to monitor conformance to quality standards",
+                es: "Colaboré con desarrolladores backend, frontend y móviles, así como con project managers y clientes, para garantizar la calidad del producto final",
+                ru: "Сотрудничал с разработчиками серверной, клиентской частей ПО, тестировщиками и руководителями проекта для достижения требуемого уровня качества продукта",
               },
             },
             {
               id: 6,
               description: {
-                en: "Worked with Agile and Scrum methodologies to accomplish project milestones and meet demanding timelines.",
-                es: "Utilización de la metodología Agile (Scrum) para alcanzar los hitos del proyecto y cumplir con los plazos de entrega.",
-                ru: "Взаимодействие с командой по методикам Agile (Scrum) для достижения поставленных целей в заданные сроки.",
+                en: "Collaborated with the development team in an Agile (Scrum) environment, to accelerate bug fixes and ensure timely, high-quality releases",
+                es: "Colaboré con el equipo en Agile (Scrum), para acelerar la resolución de errores y asegurar entregas puntuales y de alta calidad",
+                ru: "Работал в команде по методологии Agile (Scrum), чтобы ускорить устранение ошибок и обеспечить своевременные и качественные релизы",
               },
             },
           ],
@@ -245,18 +271,23 @@ export const mockData = {
         },
         position: {
           en: "Frontend developer",
-          es: "Desarrollador de Frontend",
+          es: "Desarrollador Frontend",
           ru: "Frontend разработчик",
         },
         periodFrom: {
-          en: "June 2020",
-          es: "Junio 2020",
-          ru: "Июнь 2020",
+          en: "October 2022",
+          es: "Octubre 2022",
+          ru: "Октябрь 2022",
         }, 
         periodTo: {
-          en: "May 2021",
-          es: "Mayo 2021",
-          ru: "Май 2021",
+          en: "September 2023",
+          es: "Septiembre 2023",
+          ru: "Сентябрь 2023",
+        },
+        jobDescription: {
+          en: "Developed features for an EHS platform (React),\nsuccessfully delivering multiple releases to production",
+          es: "Desarrollé funcionalidades para la plataforma EHS de la empresa (React),\ncontribuyendo a varios lanzamientos exitosos en producción",
+          ru: "Создавал и внедрял функциональность EHS-платформы (React),\nдоведя несколько релизов до продакшена",
         },
         responsibilitiesData: {
           responsibilitiesTitle: {
@@ -268,25 +299,57 @@ export const mockData = {
             {
               id: 1,
               description: {
-                en: "Implemented new features for Web-client of product.",
-                es: "Implementado nuevas características para cliente Web de producto.",
-                ru: "Реализация новых возможностей для Web-клиента приложения.",
+                en: "Built responsive interfaces featuring routing and dynamic content updates, improving user experience and extending session length",
+                es: "Creé interfaces responsivas con enrutamiento y gestión dinámica de contenido, mejorando la UX y aumentando la duración de las sesiones",
+                ru: "Разрабатывал отзывчивые интерфейсы с роутингом и динамическим контентом, улучшая UX и увеличивая время сеанса пользователей",
               },
             },
             {
               id: 2,
               description: {
-                en: "Fixed Web-client errors.",
-                es: "Corregidos errores de cliente Web.",
-                ru: "Исправление ошибок на Web-клиенте.",
+                en: "Implemented state management solutions (Redux) for efficient data handling and clear structure, accelerating the delivery of new features",
+                es: "Implementé gestión de estado (Redux) para un manejo eficiente de datos y una estructura clara, acelerando la entrega de nuevas funcionalidades",
+                ru: "Настраивал управление состоянием (Redux) для эффективной работы с данными, ускоряя внедрение новой функциональности",
               },
             },
             {
               id: 3,
               description: {
-                en: "Drafted documentation of completed tasks.",
-                es: "Escritura de la documentación sobre tareas completadas.",
-                ru: "Написание документации о завершенных задачах.",
+                en: "Integrated external APIs with typed data definitions (TypeScript), reducing errors, development and maintenance costs",
+                es: "Integré APIs externas con definiciones tipadas de datos (TypeScript), reduciendo errores y costos de desarrollo y mantenimiento",
+                ru: "Интегрировал внешние API с типизированным описанием  данных (TypeScript), снижая число ошибок, затраты на разработку и поддержку",
+              },
+            },
+            {
+              id: 4,
+              description: {
+                en: "Set up multilingual support (i18next), expanding global audience reach",
+                es: "Configuré soporte multilingüe (i18next), logrando un mayor alcance global",
+                ru: "Настраивал локализацию (i18next), увеличивая охват аудитории",
+              },
+            },
+            {
+              id: 5,
+              description: {
+                en: "Applied data caching to reduce server requests and bandwidth costs, improving UI performance and enhancing user experience (UX)",
+                es: "Apliqué caché de datos, reduciendo solicitudes al servidor y costos de ancho de banda, mejorando el rendimiento de la interfaz y optimizando la experiencia de usuario (UX)",
+                ru: "Применял кэширование данных, снижая количество запросов к серверу и затраты на трафик, улучшая производительность интерфейса и пользовательский опыт (UX)",
+              },
+            },
+            {
+              id: 6,
+              description: {
+                en: "Wrote unit tests (Jest, React Testing Library) to ensure expected application behavior, reducing potential development costs",
+                es: "Escribí pruebas unitarias (Jest, React Testing Library) para garantizar el comportamiento esperado de la aplicación, reduciendo los costes potenciales de desarrollo",
+                ru: "Писал модульные тесты (Jest, React Testing Library) для проверки ожидаемого поведения приложения, снижая потенциальные затраты на разработку",
+              },
+            },
+            {
+              id: 7,
+              description: {
+                en: "Leveraged semantic markup and SEO meta tags, increasing application visibility and improving search engine rankings",
+                es: "Aproveché el marcado semántico y las etiquetas meta SEO, aumentando la visibilidad y mejorando el posicionamiento en los motores de búsqueda",
+                ru: "Применял семантическую разметку и SEO метатеги, улучшая видимость приложения и повышая его позиции в поисковых системах",
               },
             },
           ],

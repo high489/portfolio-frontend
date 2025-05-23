@@ -2,19 +2,19 @@
   "portfolio": {
     "home": {
       "name": "Vitalii Matskaniuk",
-      "speciality": "Desarrollador de Frontend",
+      "speciality": "Desarrollador Frontend",
       "contactBtnText": "Contactá Me"
     },
     "about": {
       "sectionTitle": "Sobre Mí",
-      "infoP1": "Me llamo Vitalii Matskaniuk.",
-      "infoP2": "Decidí probar suerte como Desarrollador de Frontend después de algunos años de trabajar como Ingeniero de Calidad (QA).",
-      "infoP3": "Estoy interesado en el proceso de creación de aplicaciones web e interfaces de usuario. Mi prioridad es evolucionar y obtener experiencia. Aspiro a hacer este trabajo correctamente y con buena calidad.",
+      "infoP1": "Me llamo Vitalii Matskaniuk",
+      "infoP2": "Soy desarrollador de Frontend con experiencia tanto en desarrollo como en QA. Trabajo con React y una pila tecnológico moderna para construir aplicaciones web limpias, intuitivas y centradas en el rendimiento y la usabilidad",
+      "infoP3": "Siempre estoy abierto a aprender nuevas tecnologías, seguir creciendo y crear productos que la gente disfrute usar",
       "downloadResumeBtn": "Descargar Сurrículum",
       "positionsTitle": "Puestos",
-      "position1": "Desarrollador de Frontend",
+      "position1": "Desarrollador frontend",
       "position1Exp": "1 año",
-      "position2": "Ingeniero de Calidad (QA)",
+      "position2": "Ingeniero de QA",
       "position2Exp": "4 años"
     },
     "skills": {

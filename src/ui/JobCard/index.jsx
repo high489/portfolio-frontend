@@ -12,6 +12,7 @@ const JobCard = ({
   jobType,
   periodFrom,   
   periodTo,
+  jobDescription,
   responsibilitiesTitle,
   responsibilities,
 }) => {
@@ -37,6 +38,10 @@ const JobCard = ({
 
       <div className={styles['job-period']}>
         {`${periodFrom[language].toUpperCase()} - ${periodTo[language].toUpperCase()}`}
+      </div>
+
+      <div className={styles['job-description']}>
+        {jobDescription[language]}
       </div>
 
       <div 
