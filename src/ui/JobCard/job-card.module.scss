@@ -88,16 +88,23 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .responsibilities-wrapper {
-    padding: 0.875rem 1.5rem;
-    border: 1.5px solid rgba(hsl(167, 7%, 24%), 0.6);
-    border-radius: 1.875rem;
+  .job-card {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
   }
-  
+
+  .responsibilities-wrapper {
+    padding: 0.875rem;
+    border: 1.5px solid rgba(hsl(167, 7%, 24%), 0.6);
+    border-radius: 1.25rem;
+    width: 95%;
+  }
+
   .responsibilities-title-wrapper {
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     -webkit-tap-highlight-color: transparent;
   }
@@ -128,7 +135,7 @@
   
   .responsibilities-list > li {
     line-height: 1.5rem;
-    margin-left: 1rem;
+    margin-left: 0.875rem;
     margin-bottom: 0.5rem;
     opacity: .75;
     list-style-type: disc;
@@ -142,5 +149,12 @@
   .company-location {
     display: block;
     font-weight: 400;
+  }
+  .job-period {
+    font-size: var(--smaller-font-size);
+  }
+  .responsibilities-list > li {
+    line-height: 1.25rem;
+    margin-left: 0.5rem;
   }
 }
