@@ -30,7 +30,7 @@ const About = () => {
             <div className={styles['about-description']}>
               <p>{ t('portfolio.about.infoP1') }</p>
               <p>{ t('portfolio.about.infoP2') }</p>
-              <p>{ t('portfolio.about.infoP3') }</p>
+              {/* <p>{ t('portfolio.about.infoP3') }</p> */}
             </div>
             
             <a 
