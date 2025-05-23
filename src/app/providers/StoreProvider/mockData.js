@@ -216,7 +216,7 @@ export const mockData = {
               description: {
                 en: "Prepared the simulated software production environment for testing",
                 es: "Configuré entornos de software simulados para la ejecución de pruebas",
-                ru: "Подготовка среды для проведения тестирования",
+                ru: "Настраивал тестовое окружение, приближенное к продакшну, для проверки функциональности ПО",
               },
             },
             {
