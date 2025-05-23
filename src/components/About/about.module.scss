@@ -140,9 +140,9 @@
   .about-container {
     grid-template-columns: 320px;
   }
-  .about-description {
-    min-height: 326px;
-  }
+  // .about-description {
+  //   min-height: 326px;
+  // }
 }
 
 @media screen and (max-width: 350px) {
